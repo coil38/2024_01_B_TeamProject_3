@@ -8,7 +8,7 @@ public class MonsterSpawner : MonoBehaviour
     public Transform spawnPoint;
 
     private bool areMonstersAlive;
-    private int maxStages = 3; // ÃÖ´ë ½ºÅ×ÀÌÁö ¼ö
+    private int maxStages = 3; // ìµœëŒ€ ìŠ¤í…Œì´ì§€ ìˆ˜
 
     void Start()
     {
@@ -36,22 +36,22 @@ public class MonsterSpawner : MonoBehaviour
 
     void LoadNextStage()
     {
-        // ÇöÀç ¾ÀÀÇ ÀÌ¸§À» °¡Á®¿È
+        // í˜„ì¬ ì”¬ì˜ ì´ë¦„ì„ ê°€ì ¸ì˜´
         string currentSceneName = SceneManager.GetActiveScene().name;
 
-        // ÇöÀç ½ºÅ×ÀÌÁöÀÇ ¹øÈ£¸¦ ÃßÃâ
+        // í˜„ì¬ ìŠ¤í…Œì´ì§€ì˜ ë²ˆí˜¸ë¥¼ ì¶”ì¶œ
         int currentStageNumber = int.Parse(currentSceneName.Substring("Stage".Length));
 
         if (currentStageNumber < maxStages)
         {
-            // ´ÙÀ½ ½ºÅ×ÀÌÁö·Î ÀÌµ¿
+            // ë‹¤ìŒ ìŠ¤í…Œì´ì§€ë¡œ ì´ë™
             int nextStageNumber = currentStageNumber + 1;
             string nextStageName = "Stage" + nextStageNumber;
             SceneManager.LoadScene(nextStageName);
         }
         else
         {
-            // ÃÖ´ë ½ºÅ×ÀÌÁö¿¡ µµ´ŞÇßÀ» ¶§ °ÔÀÓ Å¬¸®¾î ¶Ç´Â ÃÊ±âÈ­
+            // ìµœëŒ€ ìŠ¤í…Œì´ì§€ì— ë„ë‹¬í–ˆì„ ë•Œ ê²Œì„ í´ë¦¬ì–´ ë˜ëŠ” ì´ˆê¸°í™”
             Debug.Log("Game Clear!");
             
             enabled = false;
