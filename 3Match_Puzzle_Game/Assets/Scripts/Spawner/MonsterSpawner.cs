@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -33,9 +34,22 @@ public class MonsterSpawner : MonoBehaviour
     {
         areMonstersAlive = alive;
     }
+    
 
     void LoadNextStage()
     {
+        StartCoroutine(TransitionToNextStage());
+    }
+
+    private IEnumerator TransitionToNextStage()
+    {
+        // 페이드 아웃 효과
+        FadeEffect fadeEffect = FindObjectOfType<FadeEffect>();
+        if (fadeEffect != null)
+        {
+            yield return StartCoroutine(fadeEffect.Fade(0f, 1f)); // 페이드 아웃
+        }
+
         // 현재 씬의 이름을 가져옴
         string currentSceneName = SceneManager.GetActiveScene().name;
 
@@ -51,10 +65,13 @@ public class MonsterSpawner : MonoBehaviour
         }
         else
         {
-            // 최대 스테이지에 도달했을 때 게임 클리어 또는 초기화
             Debug.Log("Game Clear!");
-            
-            enabled = false;
+        }
+
+        // 페이드 인 효과
+        if (fadeEffect != null)
+        {
+            yield return StartCoroutine(fadeEffect.Fade(1f, 0f)); // 페이드 인 (시간은 0.5초로 설정)
         }
     }
 }
