@@ -3,15 +3,9 @@ using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
-    public UnityAction OnDeath; // 몬스터 사망 이벤트
-
     public void Die()
     {
         gameObject.SetActive(false); // 몬스터 비활성화
-
-        if (OnDeath != null)
-        {
-            OnDeath.Invoke(); // 몬스터 사망 이벤트 호출
-        }
+        GameManager.Instance.EnemyKilled(); // GameManager를 통해 몬스터가 죽었음을 알림
     }
 }

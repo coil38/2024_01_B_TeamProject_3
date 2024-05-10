@@ -1,61 +1,60 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MonsterSpawner : MonoBehaviour
 {
-    public GameObject[] monsterPrefabs; // 여러 종류의 몬스터 프리팹을 저장할 배열
-    public Transform spawnPosition; // 몬스터가 생성될 위치
-    
-    private int currentMonsterIndex = 0; // 현재 스폰할 몬스터의 인덱스
-    private GameObject currentSpawnedMonster;
+    public GameObject monsterPrefab;
+    public float spawnDelay = 3f;
+    public Transform spawnPoint;
 
-    public float spawnInterval = 3.0f;
+    private bool areMonstersAlive;
+    private int maxStages = 3; // 최대 스테이지 수
 
     void Start()
     {
-        SpawnNextMonster();
+        areMonstersAlive = true;
+        Invoke("SpawnMonster", spawnDelay);
     }
 
-    public void SpawnNextMonster()
+    void Update()
     {
-        if (currentMonsterIndex < monsterPrefabs.Length)
+        if (!areMonstersAlive)
         {
-            // 현재 인덱스에 해당하는 몬스터 프리팹을 스폰
-            GameObject nextMonsterPrefab = monsterPrefabs[currentMonsterIndex];
-            currentSpawnedMonster = Instantiate(nextMonsterPrefab, spawnPosition.position, spawnPosition.rotation);
+            LoadNextStage();
+        }
+    }
 
-            // 몬스터가 사망할 때의 이벤트에 대한 구독
-            Enemy enemyScript = currentSpawnedMonster.GetComponent<Enemy>();
-            if (enemyScript != null)
-            {
-                enemyScript.OnDeath += HandleMonsterDeath;
-            }
+    void SpawnMonster()
+    {
+        Instantiate(monsterPrefab, spawnPoint.position, Quaternion.identity);
+    }
 
-            currentMonsterIndex++; // 다음 몬스터 인덱스로 이동
+    public void SetMonstersAlive(bool alive)
+    {
+        areMonstersAlive = alive;
+    }
+
+    void LoadNextStage()
+    {
+        // 현재 씬의 이름을 가져옴
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        // 현재 스테이지의 번호를 추출
+        int currentStageNumber = int.Parse(currentSceneName.Substring("Stage".Length));
+
+        if (currentStageNumber < maxStages)
+        {
+            // 다음 스테이지로 이동
+            int nextStageNumber = currentStageNumber + 1;
+            string nextStageName = "Stage" + nextStageNumber;
+            SceneManager.LoadScene(nextStageName);
         }
         else
         {
-            // 모든 몬스터가 스폰된 경우 보스 몬스터 스폰
-            SpawnBoss();
+            // 최대 스테이지에 도달했을 때 게임 클리어 또는 초기화
+            Debug.Log("Game Clear!");
+            
+            enabled = false;
         }
-    }
-
-    private void HandleMonsterDeath()
-    {
-        // 현재 스폰된 몬스터 사망 시 다음 몬스터 스폰
-        StartCoroutine(WaitAndSpawnNextMonster());
-    }
-
-    private IEnumerator WaitAndSpawnNextMonster()
-    {
-        yield return new WaitForSeconds(spawnInterval); // 일정 시간 대기 후 다음 몬스터 스폰
-        SpawnNextMonster();
-    }
-
-    private void SpawnBoss()
-    {
-        // 보스 몬스터를 스폰하는 로직을 여기에 구현
-        Debug.Log("보스 몬스터 등장!");
     }
 }
