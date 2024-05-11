@@ -29,7 +29,6 @@ public class GameOver : MonoBehaviour
         else
         {
             GameOverText.SetActive(true);
-            Time.timeScale = 0;
         }
     }
 
