@@ -63,10 +63,6 @@ public class MonsterSpawner : MonoBehaviour
             string nextStageName = "Stage" + nextStageNumber;
             SceneManager.LoadScene(nextStageName);
         }
-        else
-        {
-            Debug.Log("Game Clear!");
-        }
 
         // 페이드 인 효과
         if (fadeEffect != null)
