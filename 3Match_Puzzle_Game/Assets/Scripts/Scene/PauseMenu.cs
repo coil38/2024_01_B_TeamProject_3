@@ -49,4 +49,22 @@ public class PauseMenu : MonoBehaviour
     {
         Pause();
     }
+
+    public void LoadGame1()
+    {
+        Debug.Log("스테이지1 불러오기");
+        Time.timeScale = 1;
+        GameIsPaused = false;
+        SceneManager.LoadScene("Stage1");
+    }
+    
+    public void LoadGame2()
+    {
+        SceneManager.LoadScene("Stage2");
+    }
+    
+    public void LoadGame3()
+    {
+        SceneManager.LoadScene("Stage3");
+    }
 }
