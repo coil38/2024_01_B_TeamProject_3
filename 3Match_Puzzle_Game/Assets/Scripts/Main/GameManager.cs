@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 
     private MonsterSpawner monsterSpawner;
 
+    public GameObject gameClear;
+
     private void Awake()
     {
         if (Instance == null)
@@ -30,6 +32,12 @@ public class GameManager : MonoBehaviour
         if (monsters.Length == 0)
         {
             monsterSpawner.SetMonstersAlive(false); // 몬스터가 모두 죽었음을 MonsterSpawner에 알림
+
+            Time.timeScale = 0;
+            
+            gameClear.SetActive(true);
+            
+            Debug.Log("Game Clear!");
         }
     }
 }

@@ -4325,7 +4325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverText: {fileID: 357484117}
-  maxTime: 5
+  maxTime: 120
 --- !u!114 &1252276233
 MonoBehaviour:
   m_ObjectHideFlags: 0

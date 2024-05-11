@@ -3092,7 +3092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverText: {fileID: 1522715171}
-  maxTime: 5
+  maxTime: 120
 --- !u!1 &799695839
 GameObject:
   m_ObjectHideFlags: 0
