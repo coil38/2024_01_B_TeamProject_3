@@ -75,8 +75,6 @@ public class MonsterSpawner : MonoBehaviour
             Time.timeScale = 0;
             
             gameClear.SetActive(true);
-
-            Debug.Log("Game Clear!");
         }
 
         // 페이드 인 효과
