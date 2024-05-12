@@ -3,18 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
     [SerializeField] GameObject GameOverText;
     [SerializeField] float maxTime = 120f;
+    [SerializeField] GameObject DamageEffectImage; // Damage Effect 이미지 오브젝트
     float timerLeft;
     Image timerBar;
     
     void Start()
     {
         GameOverText.SetActive(false);
+        DamageEffectImage.SetActive(false);
         timerBar = GetComponent<Image>();
         timerLeft = maxTime;
     }
@@ -25,11 +26,15 @@ public class GameOver : MonoBehaviour
         {
             timerLeft -= Time.deltaTime;
             timerBar.fillAmount = timerLeft / maxTime;
+            
+            if (timerLeft <= 40f)
+            {
+                DamageEffectImage.SetActive(true);
+            }
         }
         else
         {
             GameOverText.SetActive(true);
         }
     }
-
 }
