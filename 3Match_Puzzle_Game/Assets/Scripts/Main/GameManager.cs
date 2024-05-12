@@ -6,8 +6,6 @@ public class GameManager : MonoBehaviour
 
     private MonsterSpawner monsterSpawner;
 
-    public GameObject gameClear;
-
     private void Awake()
     {
         if (Instance == null)
@@ -27,17 +25,11 @@ public class GameManager : MonoBehaviour
 
     public void EnemyKilled()
     {
-        // ¸ğµç ¸ó½ºÅÍ°¡ Á×¾ú´ÂÁö Ã¼Å©
+        // ëª¨ë“  ëª¬ìŠ¤í„°ê°€ ì£½ì—ˆëŠ”ì§€ ì²´í¬
         GameObject[] monsters = GameObject.FindGameObjectsWithTag("Enemy");
         if (monsters.Length == 0)
         {
-            monsterSpawner.SetMonstersAlive(false); // ¸ó½ºÅÍ°¡ ¸ğµÎ Á×¾úÀ½À» MonsterSpawner¿¡ ¾Ë¸²
-
-            Time.timeScale = 0;
-            
-            gameClear.SetActive(true);
-            
-            Debug.Log("Game Clear!");
+            monsterSpawner.SetMonstersAlive(false); // ëª¬ìŠ¤í„°ê°€ ëª¨ë‘ ì£½ì—ˆìŒì„ MonsterSpawnerì— ì•Œë¦¼
         }
     }
 }

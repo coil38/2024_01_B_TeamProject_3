@@ -10,6 +10,8 @@ public class MonsterSpawner : MonoBehaviour
 
     private bool areMonstersAlive;
     private int maxStages = 3; // 최대 스테이지 수
+    
+    public GameObject gameClear;
 
     void Start()
     {
@@ -62,6 +64,19 @@ public class MonsterSpawner : MonoBehaviour
             int nextStageNumber = currentStageNumber + 1;
             string nextStageName = "Stage" + nextStageNumber;
             SceneManager.LoadScene(nextStageName);
+        }
+
+        GameManager gameManager = FindObjectOfType<GameManager>();
+        
+        if (currentStageNumber == maxStages)
+        {
+            gameManager.EnemyKilled();
+            
+            Time.timeScale = 0;
+            
+            gameClear.SetActive(true);
+
+            Debug.Log("Game Clear!");
         }
 
         // 페이드 인 효과

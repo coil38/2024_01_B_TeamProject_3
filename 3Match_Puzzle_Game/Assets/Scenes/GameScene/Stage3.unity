@@ -640,6 +640,7 @@ MonoBehaviour:
   monsterPrefab: {fileID: 7739889142381410034, guid: d0b2c63cb2674e84881b89b62d475abd, type: 3}
   spawnDelay: 3
   spawnPoint: {fileID: 240659561}
+  gameClear: {fileID: 800086736}
 --- !u!1 &255714835
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +724,7 @@ MonoBehaviour:
   monsterPrefab: {fileID: 7739889142381410034, guid: d0b2c63cb2674e84881b89b62d475abd, type: 3}
   spawnDelay: 3
   spawnPoint: {fileID: 261620208}
+  gameClear: {fileID: 800086736}
 --- !u!1 &265185963
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,7 +754,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91e2d2f1bf4107f469cdfd18c90e1c46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameClear: {fileID: 800086736}
 --- !u!4 &265185965
 Transform:
   m_ObjectHideFlags: 0
@@ -1636,6 +1637,7 @@ MonoBehaviour:
   monsterPrefab: {fileID: 7739889142381410034, guid: d0b2c63cb2674e84881b89b62d475abd, type: 3}
   spawnDelay: 3
   spawnPoint: {fileID: 520082047}
+  gameClear: {fileID: 800086736}
 --- !u!1 &527747273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2432,6 +2434,7 @@ MonoBehaviour:
   monsterPrefab: {fileID: 7739889142381410034, guid: d0b2c63cb2674e84881b89b62d475abd, type: 3}
   spawnDelay: 3
   spawnPoint: {fileID: 633574783}
+  gameClear: {fileID: 800086736}
 --- !u!1 &655232108
 GameObject:
   m_ObjectHideFlags: 0
@@ -9004,6 +9007,7 @@ MonoBehaviour:
   monsterPrefab: {fileID: 7739889142381410034, guid: d0b2c63cb2674e84881b89b62d475abd, type: 3}
   spawnDelay: 3
   spawnPoint: {fileID: 1946851236}
+  gameClear: {fileID: 800086736}
 --- !u!1 &2031286704
 GameObject:
   m_ObjectHideFlags: 0

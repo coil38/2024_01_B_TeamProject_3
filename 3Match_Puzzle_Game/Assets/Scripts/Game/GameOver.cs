@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,7 +5,7 @@ public class GameOver : MonoBehaviour
 {
     [SerializeField] GameObject GameOverText;
     [SerializeField] float maxTime = 120f;
-    [SerializeField] GameObject DamageEffectImage; // Damage Effect 이미지 오브젝트
+    [SerializeField] GameObject DamageEffectImage;
     float timerLeft;
     Image timerBar;
     
