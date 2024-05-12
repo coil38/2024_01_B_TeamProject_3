@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         GameObject[] monsters = GameObject.FindGameObjectsWithTag("Enemy");
         if (monsters.Length == 0)
         {
-            monsterSpawner.SetMonstersAlive(false); // 몬스터가 모두 죽었음을 MonsterSpawner에 알림
+            monsterSpawner.SetMonstersAlive(false);
         }
     }
 }
