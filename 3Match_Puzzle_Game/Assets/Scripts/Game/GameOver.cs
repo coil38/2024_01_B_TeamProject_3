@@ -6,6 +6,7 @@ public class GameOver : MonoBehaviour
     [SerializeField] GameObject GameOverText;
     [SerializeField] float maxTime = 120f;
     [SerializeField] GameObject DamageEffectImage;
+
     float timerLeft;
     Image timerBar;
     
@@ -32,6 +33,8 @@ public class GameOver : MonoBehaviour
         else
         {
             GameOverText.SetActive(true);
+            
+            DamageEffectImage.SetActive(false);
         }
     }
 }

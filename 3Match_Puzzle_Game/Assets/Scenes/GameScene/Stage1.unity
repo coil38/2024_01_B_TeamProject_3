@@ -3286,7 +3286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverText: {fileID: 1522715171}
-  maxTime: 50
+  maxTime: 120
   DamageEffectImage: {fileID: 1941579678}
 --- !u!1 &799695839
 GameObject:
