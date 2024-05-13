@@ -3286,7 +3286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverText: {fileID: 1522715171}
-  maxTime: 120
+  maxTime: 50
   DamageEffectImage: {fileID: 1941579678}
 --- !u!1 &799695839
 GameObject:
@@ -7169,6 +7169,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1941579679}
   - {fileID: 1916119480}
   - {fileID: 613726044}
   - {fileID: 1203683296}
@@ -7183,7 +7184,6 @@ RectTransform:
   - {fileID: 1597928222}
   - {fileID: 2119575842}
   - {fileID: 1522715172}
-  - {fileID: 1941579679}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
