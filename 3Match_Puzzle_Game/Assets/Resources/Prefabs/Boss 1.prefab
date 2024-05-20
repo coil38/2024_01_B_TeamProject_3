@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1105478888065748080}
   - component: {fileID: 3095390408323253991}
-  - component: {fileID: 1529102938098503710}
+  - component: {fileID: 5251179067029769990}
   - component: {fileID: 5251412779241752220}
   - component: {fileID: 3274141885393022434}
   - component: {fileID: 6456740289796463772}
   m_Layer: 6
-  m_Name: Slime
+  m_Name: Boss 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.169, y: 2.84, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 229685659, guid: 3d5f63fc5305e854cbbf6633e819a0ab, type: 3}
+  m_Sprite: {fileID: -580464149, guid: a729019d9bb3fe549bb5ca0074d983b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -88,8 +88,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &1529102938098503710
-CircleCollider2D:
+--- !u!61 &5251179067029769990
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -120,9 +120,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.97, y: -1.1}
+  m_Offset: {x: 0, y: -0.99}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 10}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 4.41
+  m_Size: {x: 7.63, y: 7.94}
+  m_EdgeRadius: 0
 --- !u!50 &5251412779241752220
 Rigidbody2D:
   serializedVersion: 4
@@ -172,7 +182,7 @@ Animator:
   m_GameObject: {fileID: 7739889142381410034}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ff2d8f5edeb44ff4d97c1f76414b488b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 81fbad48fda118e4ba536c94f29d745b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

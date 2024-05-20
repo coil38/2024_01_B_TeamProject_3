@@ -635,7 +635,7 @@ Transform:
   m_GameObject: {fileID: 200399765}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.545, y: 2.042, z: 0}
+  m_LocalPosition: {x: 1.545, y: 2.9, z: -0.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -653,7 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 224e363333d33394d9cfc2b74739f14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterPrefab: {fileID: 7739889142381410034, guid: d0b2c63cb2674e84881b89b62d475abd, type: 3}
+  monsterPrefab: {fileID: 7739889142381410034, guid: 5a529a143be2a334faeef50ed5e227e2, type: 3}
   spawnDelay: 3
   spawnPoint: {fileID: 200399766}
   gameClear: {fileID: 1428975052}
@@ -683,7 +683,7 @@ Transform:
   m_GameObject: {fileID: 250668051}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.36, y: 2.21, z: 0}
+  m_LocalPosition: {x: 2.58, y: 2.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -701,7 +701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 224e363333d33394d9cfc2b74739f14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterPrefab: {fileID: 7739889142381410034, guid: d0b2c63cb2674e84881b89b62d475abd, type: 3}
+  monsterPrefab: {fileID: 7739889142381410034, guid: 507028367700bdf4491b8592dc61c902, type: 3}
   spawnDelay: 3
   spawnPoint: {fileID: 250668052}
   gameClear: {fileID: 1428975052}
@@ -1079,7 +1079,7 @@ Transform:
   m_GameObject: {fileID: 437346427}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.09, y: 2.27, z: 0}
+  m_LocalPosition: {x: 0.72, y: 2.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 224e363333d33394d9cfc2b74739f14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterPrefab: {fileID: 7739889142381410034, guid: d0b2c63cb2674e84881b89b62d475abd, type: 3}
+  monsterPrefab: {fileID: 7739889142381410034, guid: 507028367700bdf4491b8592dc61c902, type: 3}
   spawnDelay: 3
   spawnPoint: {fileID: 437346428}
   gameClear: {fileID: 1428975052}
@@ -8290,7 +8290,7 @@ Transform:
   m_GameObject: {fileID: 2074907390}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.673, y: 1.986, z: 0}
+  m_LocalPosition: {x: 0.673, y: 1.986, z: -0.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8308,7 +8308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 224e363333d33394d9cfc2b74739f14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterPrefab: {fileID: 7739889142381410034, guid: d0b2c63cb2674e84881b89b62d475abd, type: 3}
+  monsterPrefab: {fileID: 7739889142381410034, guid: 507028367700bdf4491b8592dc61c902, type: 3}
   spawnDelay: 3
   spawnPoint: {fileID: 2074907391}
   gameClear: {fileID: 1428975052}
@@ -8900,7 +8900,7 @@ Transform:
   m_GameObject: {fileID: 2132142997}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.03, y: 1.8, z: 0}
+  m_LocalPosition: {x: 2.03, y: 1.8, z: -0.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8918,7 +8918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 224e363333d33394d9cfc2b74739f14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterPrefab: {fileID: 7739889142381410034, guid: d0b2c63cb2674e84881b89b62d475abd, type: 3}
+  monsterPrefab: {fileID: 7739889142381410034, guid: 507028367700bdf4491b8592dc61c902, type: 3}
   spawnDelay: 3
   spawnPoint: {fileID: 2132142998}
   gameClear: {fileID: 1428975052}
