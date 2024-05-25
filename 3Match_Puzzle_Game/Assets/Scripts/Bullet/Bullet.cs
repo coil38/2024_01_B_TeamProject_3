@@ -3,6 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 8f; //탄알 이동 속력
+    public int damage = 20; // 탄알이 적에게 줄 데미지
     private Rigidbody2D rigid; //이동에 사용할 리지드바디 컴포넌트
 
     // Start is called before the first frame update
@@ -23,14 +24,14 @@ public class Bullet : MonoBehaviour
         //충돌한 상대방 게임 오브젝트가 Enemy 태그를 가진 경우
         if (collision.tag == "Enemy")
         {
-            //상대방 게임 오브젝트에서 Enemy 컴포넌트 가져오기
-            Enemy enemy = collision.GetComponent<Enemy>();
+            // 상대방 게임 오브젝트에서 EnemyHealth 컴포넌트 가져오기
+            EnemyHealth enemyHealth = collision.GetComponent<EnemyHealth>();
 
             //상대방으로부터 Enemy 컴포넌트를 가져오는 데 성공했다면
-            if (enemy != null)
+            if (enemyHealth != null)
             {
                 //상대방 Enemy 컴포넌트의 Die 메서드 실행
-                enemy.Die();
+                enemyHealth.TakeDamage(damage);
                 
                 gameObject.SetActive(false);
             }
