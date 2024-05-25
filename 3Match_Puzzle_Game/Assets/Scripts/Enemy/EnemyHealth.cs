@@ -28,8 +28,8 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Enemy Died"); // 적이 죽었음을 출력합니다.
-        Destroy(gameObject); // 적 오브젝트를 파괴합니다.
+        Enemy enemy = GetComponent<Enemy>();
+        enemy.Die();
     }
 
     // Update is called once per frame
