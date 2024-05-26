@@ -10,13 +10,6 @@ public class EnemyAttack : MonoBehaviour
     private float nextAttackTime = 0f; // 다음 공격이 가능한 시간을 추적합니다.
     public Transform Player; // 플레이어의 Transform을 참조합니다.
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (Player == null)
