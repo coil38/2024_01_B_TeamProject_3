@@ -222,7 +222,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.19, y: 3.5774999}
+  m_AnchoredPosition: {x: -0.02, y: 3.5774999}
   m_SizeDelta: {x: 372, y: 243.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &8965125725368111524
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 4516425419439950690}
   - component: {fileID: 2484149222959110829}
   m_Layer: 6
-  m_Name: Monster3-1
+  m_Name: Boss2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -321,7 +321,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3677755805416095164}
@@ -368,7 +368,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1868734012, guid: 2b01671f12370d14c95bdb6eee64aa14, type: 3}
+  m_Sprite: {fileID: -2116397716, guid: 69bdab5763c335a4ca4ef5a4a0ae203b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -411,9 +411,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.04, y: 0}
   serializedVersion: 2
-  m_Radius: 3.25
+  m_Radius: 1.95
 --- !u!50 &5251412779241752220
 Rigidbody2D:
   serializedVersion: 4
@@ -463,7 +463,7 @@ Animator:
   m_GameObject: {fileID: 7739889142381410034}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bc710134034f91d4dae8134cf3b95105, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1f0c21ec8f247d2419491b8878d0578a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
