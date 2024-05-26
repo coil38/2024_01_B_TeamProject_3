@@ -8900,7 +8900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 1340184441}
 --- !u!1 &1941579678
 GameObject:
   m_ObjectHideFlags: 0
