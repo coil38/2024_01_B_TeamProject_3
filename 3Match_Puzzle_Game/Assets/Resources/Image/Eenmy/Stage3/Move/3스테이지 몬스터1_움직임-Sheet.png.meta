@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ac1cddab0575aea4cbb70559c85e3677
+guid: f2a8b839c402b6448abf8219dffe922f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -115,7 +115,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 400
+        width: 200
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1647ce9deb02a2443abcdd289f13f7c3
-      internalID: -1623392643
+      spriteID: 3426fb853b53b4e4580c04278a8a9169
+      internalID: 1602081253
       vertices: []
       indices: 
       edges: []
@@ -134,9 +134,9 @@ TextureImporter:
       name: "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_1"
       rect:
         serializedVersion: 2
-        x: 400
+        x: 200
         y: 0
-        width: 400
+        width: 200
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7259be679f1b004fbd19b7903429997
-      internalID: 1586834975
+      spriteID: 9bb48f19437d40f4f97d3b99231795c4
+      internalID: -1121892440
       vertices: []
       indices: 
       edges: []
@@ -155,9 +155,9 @@ TextureImporter:
       name: "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_2"
       rect:
         serializedVersion: 2
-        x: 800
+        x: 400
         y: 0
-        width: 400
+        width: 200
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18f0e84942e373a4398de41879e6872c
-      internalID: 160563161
+      spriteID: 400edb055e989374bb45085289a8a3db
+      internalID: 1660424950
       vertices: []
       indices: 
       edges: []
@@ -176,9 +176,9 @@ TextureImporter:
       name: "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_3"
       rect:
         serializedVersion: 2
-        x: 1200
+        x: 600
         y: 0
-        width: 400
+        width: 200
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9cd4fcec5b56c04f808ccc35f0196db
-      internalID: 481744140
+      spriteID: a069e1786bb532e4d911aa5844326de2
+      internalID: -488634335
       vertices: []
       indices: 
       edges: []
@@ -197,9 +197,9 @@ TextureImporter:
       name: "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_4"
       rect:
         serializedVersion: 2
-        x: 1600
+        x: 800
         y: 0
-        width: 400
+        width: 200
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -208,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adf6bf7c97017504f979f28879902ea0
-      internalID: 305775399
+      spriteID: 9812c78d8c6df024ab86a42cab2992d4
+      internalID: 143197821
       vertices: []
       indices: 
       edges: []
@@ -218,9 +218,9 @@ TextureImporter:
       name: "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_5"
       rect:
         serializedVersion: 2
-        x: 2000
+        x: 1000
         y: 0
-        width: 400
+        width: 200
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de9d899e0ad950c44a6b31174f22ddc4
-      internalID: -773150967
+      spriteID: dbb4ce7894f546d42ba8c63aa694f252
+      internalID: -1937907376
       vertices: []
       indices: 
       edges: []
@@ -239,9 +239,9 @@ TextureImporter:
       name: "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_6"
       rect:
         serializedVersion: 2
-        x: 2400
+        x: 1200
         y: 0
-        width: 400
+        width: 200
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -250,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 935eeb31ec982d347a0c7ccf901c05a3
-      internalID: 468268769
+      spriteID: ef4110fd6bc7f0d4a8e719b426ee1962
+      internalID: -1827805264
       vertices: []
       indices: 
       edges: []
@@ -260,9 +260,9 @@ TextureImporter:
       name: "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_7"
       rect:
         serializedVersion: 2
-        x: 2800
+        x: 1400
         y: 0
-        width: 400
+        width: 200
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c2a951e690e6d942b68132c37cad449
-      internalID: -1477713033
+      spriteID: fc968c66accc67c4bb738202fc16dbef
+      internalID: -1678697863
       vertices: []
       indices: 
       edges: []
@@ -281,9 +281,9 @@ TextureImporter:
       name: "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_8"
       rect:
         serializedVersion: 2
-        x: 3200
+        x: 1600
         y: 0
-        width: 400
+        width: 200
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -292,8 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 169e0dec0d71c154cae4eadc0c4463be
-      internalID: -2009002127
+      spriteID: e858e1cbdca4b5f45b9eeb911680b660
+      internalID: 1208292195
       vertices: []
       indices: 
       edges: []
@@ -302,9 +302,9 @@ TextureImporter:
       name: "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_9"
       rect:
         serializedVersion: 2
-        x: 3600
+        x: 1800
         y: 0
-        width: 400
+        width: 200
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -313,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1489d0f95ae1b24ba2cdc1edfb78392
-      internalID: 591617193
+      spriteID: f909d4682e94eb046890da442873b456
+      internalID: 822237053
       vertices: []
       indices: 
       edges: []
@@ -330,16 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_0": -1623392643
-      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_1": 1586834975
-      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_2": 160563161
-      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_3": 481744140
-      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_4": 305775399
-      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_5": -773150967
-      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_6": 468268769
-      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_7": -1477713033
-      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_8": -2009002127
-      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_9": 591617193
+      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_0": 1602081253
+      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_1": -1121892440
+      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_2": 1660424950
+      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_3": -488634335
+      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_4": 143197821
+      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_5": -1937907376
+      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_6": -1827805264
+      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_7": -1678697863
+      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_8": 1208292195
+      "3\uC2A4\uD14C\uC774\uC9C0 \uBAAC\uC2A4\uD1301_\uC6C0\uC9C1\uC784-Sheet_9": 822237053
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
