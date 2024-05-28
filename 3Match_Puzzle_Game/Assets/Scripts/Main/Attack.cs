@@ -1,28 +1,48 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Attack : MonoBehaviour
 {
     // ScoreCounter의 인스턴스
     private ScoreCounter _scoreCounter;
-    
-    // BulletSpawner 인스턴스
-    private BulletSpawner bulletSpawner; 
 
-    // 플레이어 공격에 필요한 점수
+    // BulletSpawner 인스턴스
+    private BulletSpawner bulletSpawner;
+
+    // 공격에 필요한 점수
     public int meleeAttackCost = 50;
     public int fireAttackCost = 100;
     public int iceAttackCost = 70;
     public int lightningAttackCost = 150;
     public int bowAttackCost = 30;
 
+    // 공격 버튼 참조
+    public Button meleeAttackButton;
+    public Button fireAttackButton;
+    public Button iceAttackButton;
+    public Button lightningAttackButton;
+    public Button bowAttackButton;
+
     void Awake()
+    {
+        // BulletSpawner의 인스턴스를 가져옴
+        bulletSpawner = FindObjectOfType<BulletSpawner>();
+    }
+
+    void Start()
     {
         // ScoreCounter의 인스턴스를 가져옴
         _scoreCounter = ScoreCounter.Instance;
-
-        // 버튼에 클릭 이벤트 리스너 추가는 Start에서 수행
-        
-        bulletSpawner = FindObjectOfType<BulletSpawner>();
+    }
+    
+    void Update()
+    {
+        // 버튼 잠금/잠금 해제
+        meleeAttackButton.interactable = _scoreCounter.Score >= meleeAttackCost;
+        fireAttackButton.interactable = _scoreCounter.Score >= fireAttackCost;
+        iceAttackButton.interactable = _scoreCounter.Score >= iceAttackCost;
+        lightningAttackButton.interactable = _scoreCounter.Score >= lightningAttackCost;
+        bowAttackButton.interactable = _scoreCounter.Score >= bowAttackCost;
     }
 
     // 근접 공격 호출 메서드
@@ -37,7 +57,7 @@ public class Attack : MonoBehaviour
         PerformAttack(fireAttackCost, "불");
     }
 
-    // 물 공격 호출 메서드
+    // 얼음 공격 호출 메서드
     public void IceAttack()
     {
         PerformAttack(iceAttackCost, "얼음");
@@ -61,19 +81,14 @@ public class Attack : MonoBehaviour
         // 플레이어의 점수가 공격에 필요한 점수보다 충분한지 확인
         if (_scoreCounter.Score >= cost)
         {
-            // 공격 로직을 구현
-            Debug.Log($"코스트 {cost} 의 {attackType} 공격을 실행합니다!");
-
             // 점수를 감소시킴
             _scoreCounter.Score -= cost;
+            
+            Debug.Log($"코스트 {cost} 의 {attackType} 공격을 실행합니다!");
 
-            // 총알 생성
-            bulletSpawner.SpawnBullet(); // BulletSpawner의 SpawnBullet() 메서드 호출
+            // BulletSpawner의 SpawnBullet() 메서드 호출
+            bulletSpawner.SpawnBullet(); 
         }
-        else
-        {
-            // 플레이어의 점수가 부족할 때 처리할 내용 추가 가능
-            Debug.Log($"코스트 {cost} 의 {attackType} 공격의 코스트가 부족하여 공격할 수 없습니다.");
-        }
+
     }
 }
