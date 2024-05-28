@@ -3,9 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class MainScene : MonoBehaviour
 {
-    public void SelectionStage()
+    public GameObject SelectionStage;
+    public GameObject mainScene;
+    
+    public void GotoSelectionStage()
     {
-        SceneManager.LoadScene("SelectionStage");
+        SelectionStage.gameObject.SetActive(true);
+        mainScene.gameObject.SetActive(false);
     }
 
     public void GotoMain()
