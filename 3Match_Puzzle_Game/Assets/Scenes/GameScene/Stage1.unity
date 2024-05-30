@@ -1604,12 +1604,12 @@ MonoBehaviour:
   meleeAttackCost: 50
   fireAttackCost: 100
   iceAttackCost: 70
-  lightningAttackCost: 150
+  playerHealCost: 50
   bowAttackCost: 30
   meleeAttackButton: {fileID: 1479819258}
   fireAttackButton: {fileID: 1429239101}
   iceAttackButton: {fileID: 1445738484}
-  lightningAttackButton: {fileID: 1422110339}
+  playerHealButton: {fileID: 1422110339}
   bowAttackButton: {fileID: 2094104670}
 --- !u!1 &460447693
 GameObject:
@@ -4932,7 +4932,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 366273870}
         m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: LightningAttack
+        m_MethodName: PlayerHeal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

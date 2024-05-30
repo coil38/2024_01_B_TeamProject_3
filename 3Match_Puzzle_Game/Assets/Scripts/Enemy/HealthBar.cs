@@ -21,16 +21,4 @@ public class HealthBar : MonoBehaviour
         slider.value = health; // 슬라이더의 현재값을 설정합니다.
         fill.color = gradient.Evaluate(slider.normalizedValue); // 현재 체력 비율에 따른 색상으로 설정합니다.
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
