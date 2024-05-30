@@ -400,8 +400,9 @@ GameObject:
   - component: {fileID: 5251412779241752220}
   - component: {fileID: 3274141885393022434}
   - component: {fileID: 6456740289796463772}
-  - component: {fileID: 2339807077424354861}
   - component: {fileID: 7177642279329485710}
+  - component: {fileID: 8931685479733123976}
+  - component: {fileID: 4686516663904810931}
   m_Layer: 6
   m_Name: Slime
   m_TagString: Enemy
@@ -572,19 +573,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2339807077424354861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7739889142381410034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4979c7a1cfdf44c4ae3aa3f5ab5c3c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 0.05
 --- !u!114 &7177642279329485710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,6 +587,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 30
   healthBar: {fileID: 1622362547728463643}
+--- !u!114 &8931685479733123976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7739889142381410034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94bc97f21e4f9c84695bd7ccf0eaed41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+--- !u!114 &4686516663904810931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7739889142381410034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62be11525918f4029b71fa6612462762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  player: {fileID: 5732731001967146796, guid: c7c4aa98f15a04c7a985d303d513c62f, type: 3}
+  offsetFromPlayer: {x: 2.2, y: 0, z: 0}
+  bulletPrefab: {fileID: 0}
+  firePoint: {fileID: 0}
+  shootInterval: 1
 --- !u!1 &8735245270312148821
 GameObject:
   m_ObjectHideFlags: 0
