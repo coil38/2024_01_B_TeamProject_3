@@ -401,8 +401,7 @@ GameObject:
   - component: {fileID: 3274141885393022434}
   - component: {fileID: 6456740289796463772}
   - component: {fileID: 7177642279329485710}
-  - component: {fileID: 8931685479733123976}
-  - component: {fileID: 4686516663904810931}
+  - component: {fileID: -1402565051853548791}
   m_Layer: 6
   m_Name: Slime
   m_TagString: Enemy
@@ -587,20 +586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 30
   healthBar: {fileID: 1622362547728463643}
---- !u!114 &8931685479733123976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7739889142381410034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94bc97f21e4f9c84695bd7ccf0eaed41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
---- !u!114 &4686516663904810931
+--- !u!114 &-1402565051853548791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -612,12 +598,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62be11525918f4029b71fa6612462762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.1
   player: {fileID: 5732731001967146796, guid: c7c4aa98f15a04c7a985d303d513c62f, type: 3}
-  offsetFromPlayer: {x: 2.2, y: 0, z: 0}
-  bulletPrefab: {fileID: 0}
-  firePoint: {fileID: 0}
-  shootInterval: 1
+  distanceToMaintain: 1.5
+  bulletPrefab: {fileID: 3928302621148496416, guid: db3d6a571941541f5872b477d758f586, type: 3}
+  firePoint: {fileID: 1105478888065748080}
+  shootInterval: 3
 --- !u!1 &8735245270312148821
 GameObject:
   m_ObjectHideFlags: 0

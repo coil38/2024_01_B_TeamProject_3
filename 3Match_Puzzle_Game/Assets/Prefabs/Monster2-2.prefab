@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 3274141885393022434}
   - component: {fileID: 6456740289796463772}
   - component: {fileID: 4516425419439950690}
-  - component: {fileID: 2484149222959110829}
+  - component: {fileID: 1302276629417628338}
   m_Layer: 6
   m_Name: Monster2-2
   m_TagString: Enemy
@@ -408,7 +408,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 70
   healthBar: {fileID: 7317354653841879163}
---- !u!114 &2484149222959110829
+--- !u!114 &1302276629417628338
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -497,10 +497,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7739889142381410034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4979c7a1cfdf44c4ae3aa3f5ab5c3c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 62be11525918f4029b71fa6612462762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.05
+  speed: 0.1
+  player: {fileID: 5732731001967146796, guid: c7c4aa98f15a04c7a985d303d513c62f, type: 3}
+  distanceToMaintain: 1.5
+  bulletPrefab: {fileID: 3928302621148496416, guid: db3d6a571941541f5872b477d758f586, type: 3}
+  firePoint: {fileID: 1105478888065748080}
+  shootInterval: 3
 --- !u!1 &7950446858889363729
 GameObject:
   m_ObjectHideFlags: 0
