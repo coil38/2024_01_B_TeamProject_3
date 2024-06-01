@@ -5,26 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    //public static PauseMenu Instance;
-    
     public static bool GameIsPaused = false;
     public GameObject _pauseMenu;
 
     private static string previousScene;
 
-    /*private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject); // 게임 매니저 오브젝트가 씬 전환 시에도 파괴되지 않도록 설정
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }*/
-    
     void Start()
     {
         if (SceneManager.GetActiveScene().name != "SettingsScene")
@@ -40,6 +25,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        SoundManager.instance.PlaySound("ButtonClick");
         _pauseMenu.SetActive(false);
         Time.timeScale = 1;
         GameIsPaused = false;
@@ -47,6 +33,7 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
+        SoundManager.instance.PlaySound("ButtonClick");
         _pauseMenu.SetActive(true);
         Time.timeScale = 0;
         GameIsPaused = true;
@@ -54,6 +41,7 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
+        SoundManager.instance.PlaySound("ButtonClick");
         Time.timeScale = 1;
         GameIsPaused = false;
         SceneManager.LoadScene("MainScene");
@@ -61,16 +49,19 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
+        SoundManager.instance.PlaySound("ButtonClick");
         Application.Quit();
     }
 
     public void OpenPauseMenu()
     {
+        SoundManager.instance.PlaySound("ButtonClick");
         Pause();
     }
 
     public void LoadGame1()
     {
+        SoundManager.instance.PlaySound("ButtonClick");
         Time.timeScale = 1;
         GameIsPaused = false;
         SceneManager.LoadScene("Stage1");
@@ -78,6 +69,7 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadGame2()
     {
+        SoundManager.instance.PlaySound("ButtonClick");
         Time.timeScale = 1;
         GameIsPaused = false;
         SceneManager.LoadScene("Stage2");
@@ -85,6 +77,7 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadGame3()
     {
+        SoundManager.instance.PlaySound("ButtonClick");
         Time.timeScale = 1;
         GameIsPaused = false;
         SceneManager.LoadScene("Stage3");
@@ -92,6 +85,7 @@ public class PauseMenu : MonoBehaviour
 
     public void GoToSettings()
     {
+        SoundManager.instance.PlaySound("ButtonClick");
         previousScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("SettingsScene");
     }
@@ -101,6 +95,7 @@ public class PauseMenu : MonoBehaviour
         if (!string.IsNullOrEmpty(previousScene))
         {
             SceneManager.LoadScene(previousScene);
+            SoundManager.instance.PlaySound("ButtonClick");
         }
     }
 }

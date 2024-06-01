@@ -765,13 +765,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meleeAttackCost: 50
-  fireAttackCost: 100
-  iceAttackCost: 70
+  magcialAttackCost: 100
+  spearAttackCost: 70
   playerHealCost: 50
   bowAttackCost: 30
   meleeAttackButton: {fileID: 1479819258}
-  fireAttackButton: {fileID: 1429239101}
-  iceAttackButton: {fileID: 1445738484}
+  magcialAttackButton: {fileID: 1429239101}
+  spearAttackButton: {fileID: 1445738484}
   playerHealButton: {fileID: 1422110339}
   bowAttackButton: {fileID: 2094104670}
 --- !u!1 &460447693
@@ -2191,7 +2191,7 @@ GameObject:
   - component: {fileID: 996088551}
   - component: {fileID: 996088550}
   m_Layer: 5
-  m_Name: Lightningattack
+  m_Name: PlayerHeal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2958,7 +2958,7 @@ GameObject:
   - component: {fileID: 1272768343}
   - component: {fileID: 1272768342}
   m_Layer: 5
-  m_Name: FIreAttack
+  m_Name: MagcialAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3083,7 +3083,7 @@ GameObject:
   - component: {fileID: 1422110340}
   - component: {fileID: 1422110339}
   m_Layer: 5
-  m_Name: Light
+  m_Name: Heal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3203,79 +3203,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422110337}
   m_CullTransparentMesh: 1
---- !u!1 &1424243044
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1424243046}
-  - component: {fileID: 1424243045}
-  - component: {fileID: 1424243047}
-  m_Layer: 0
-  m_Name: SoundManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1424243045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424243044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7d13e15984988347bc4f3e5a8500926, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: BackGround
-    clip: {fileID: 8300000, guid: 90eae78e8ce85a849b5b0ca11b2de641, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 1
-    mixerGroup: {fileID: -4186542774813161279, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
-    source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 1
-    pitch: 1
-    loop: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  audioMixer: {fileID: 24100000, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
---- !u!4 &1424243046
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424243044}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1424243047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424243044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd9597d8c7a36f94c9cf0f4a035a1354, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1429239099
 GameObject:
   m_ObjectHideFlags: 0
@@ -3289,7 +3216,7 @@ GameObject:
   - component: {fileID: 1429239102}
   - component: {fileID: 1429239101}
   m_Layer: 5
-  m_Name: Fire
+  m_Name: Magcial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3360,7 +3287,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 366273870}
         m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: FireAttack
+        m_MethodName: MagcialAttack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3513,7 +3440,7 @@ GameObject:
   - component: {fileID: 1445738485}
   - component: {fileID: 1445738484}
   m_Layer: 5
-  m_Name: Ice
+  m_Name: Spear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3584,7 +3511,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 366273870}
         m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: IceAttack
+        m_MethodName: SpearAttack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5622,7 +5549,7 @@ GameObject:
   - component: {fileID: 1826748117}
   - component: {fileID: 1826748116}
   m_Layer: 5
-  m_Name: IceAttack
+  m_Name: SpearAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7049,7 +6976,6 @@ SceneRoots:
   - {fileID: 1444872663}
   - {fileID: 966619112}
   - {fileID: 265185965}
-  - {fileID: 1424243046}
   - {fileID: 4828760746784220352}
   - {fileID: 129926463}
   - {fileID: 1623682518}

@@ -9,9 +9,6 @@ using Random = UnityEngine.Random;
 public sealed class Board : MonoBehaviour
 {
     public static Board Instance { get; private set; } // Board 클래스의 싱글톤 인스턴스
-
-    [SerializeField] private AudioClip collectSound; // 아이템 제거 시 재생할 사운드 클립
-    [SerializeField] private AudioSource audioSource; // 사운드 재생을 위한 AudioSource
     
     public Row[] rows; // 게임 보드의 행을 나타내는 Row 배열
 
@@ -126,7 +123,7 @@ public sealed class Board : MonoBehaviour
                     deflateSequence.Join(connectedTile.icon.transform.DOScale(Vector3.zero, TweenDuration)); // 타일 아이콘 크기 축소
                 }
                 
-                audioSource.PlayOneShot(collectSound); // 아이템 수집 사운드 재생
+                SoundManager.instance.PlaySound("Match");
 
                 await deflateSequence.Play() // 애니메이션 재생
                                      .AsyncWaitForCompletion(); // 애니메이션이 완료될 때까지 대기

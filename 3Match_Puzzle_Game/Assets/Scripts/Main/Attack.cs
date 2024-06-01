@@ -14,15 +14,15 @@ public class Attack : MonoBehaviour
 
     // 공격에 필요한 점수
     public int meleeAttackCost = 50;
-    public int fireAttackCost = 100;
-    public int iceAttackCost = 70;
+    public int magcialAttackCost = 100;
+    public int spearAttackCost = 70;
     public int playerHealCost = 50;
     public int bowAttackCost = 30;
 
     // 공격 버튼 참조
     public Button meleeAttackButton;
-    public Button fireAttackButton;
-    public Button iceAttackButton;
+    public Button magcialAttackButton;
+    public Button spearAttackButton;
     public Button playerHealButton;
     public Button bowAttackButton;
 
@@ -45,8 +45,8 @@ public class Attack : MonoBehaviour
     void Update()
     {
         meleeAttackButton.interactable = _scoreCounter.Score >= meleeAttackCost;
-        fireAttackButton.interactable = _scoreCounter.Score >= fireAttackCost;
-        iceAttackButton.interactable = _scoreCounter.Score >= iceAttackCost;
+        magcialAttackButton.interactable = _scoreCounter.Score >= magcialAttackCost;
+        spearAttackButton.interactable = _scoreCounter.Score >= spearAttackCost;
         playerHealButton.interactable = _scoreCounter.Score >= playerHealCost;
         bowAttackButton.interactable = _scoreCounter.Score >= bowAttackCost;
     }
@@ -54,26 +54,32 @@ public class Attack : MonoBehaviour
     public void MeleeAttack()
     {
         PerformAttack(meleeAttackCost, "근접");
+        SoundManager.instance.PlaySound("Melee");
+        
     }
 
-    public void FireAttack()
+    public void MagcialAttack()
     {
-        PerformAttack(fireAttackCost, "불");
+        PerformAttack(magcialAttackCost, "마법");
+        SoundManager.instance.PlaySound("Magcial");
     }
 
-    public void IceAttack()
+    public void SpearAttack()
     {
-        PerformAttack(iceAttackCost, "얼음");
+        PerformAttack(spearAttackCost, "창");
+        SoundManager.instance.PlaySound("Spear");
     }
 
     public void PlayerHeal()
     {
         PerformHeal(playerHealCost);
+        SoundManager.instance.PlaySound("Healing");
     }
 
     public void BowAttack()
     {
         PerformAttack(bowAttackCost, "활");
+        SoundManager.instance.PlaySound("Crossbow");
     }
 
     private void PerformAttack(int cost, string attackType)
