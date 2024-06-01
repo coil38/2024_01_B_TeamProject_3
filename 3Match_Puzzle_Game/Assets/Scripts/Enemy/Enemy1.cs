@@ -14,8 +14,12 @@ public class Enemy1 : MonoBehaviour
     private bool isMoving = true;       // 적이 이동 중인지 여부
 
     private Rigidbody2D rb;
-
-    // Update is called once per frame
+    
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();  // Rigidbody2D 컴포넌트 가져오기
+    }
+    
     void Update()
     {
         if (isMoving)
@@ -53,10 +57,5 @@ public class Enemy1 : MonoBehaviour
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);  // 총알 생성
             nextShootTime = Time.time + shootInterval;  // 다음 발사 시간 갱신
         }
-    }
-
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();  // Rigidbody2D 컴포넌트 가져오기
     }
 }

@@ -6,7 +6,7 @@ public class EnemyMovement1 : MonoBehaviour
 {
     public Transform player; // 플레이어의 Transform
     public float speed = 5f; // 슬라임 이동 속도
-    // Update is called once per frame
+
     void Update()
     {
         // 플레이어와 슬라임의 현재 위치
