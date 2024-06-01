@@ -6,12 +6,14 @@ public class Enemy1 : MonoBehaviour
 {
     public float speed = 3.0f;  // 적의 이동 속도
     public Transform player;    // 플레이어의 Transform
-    public Vector3 offsetFromPlayer = new Vector3(0.01f, 0, 0); // 플레이어로부터 1cm 떨어진 위치 (1cm = 0.01 유니티 단위)
+    public float distanceToMaintain = 1.0f;  // 플레이어와의 유지 거리
     public GameObject bulletPrefab;     // 발사할 총알 프리팹
     public Transform firePoint;         // 총알이 발사될 위치
     public float shootInterval = 1.0f;  // 총알 발사 간격
     private float nextShootTime = 0f;   // 다음 발사 시간
     private bool isMoving = true;       // 적이 이동 중인지 여부
+
+    private Rigidbody2D rb;
 
     // Update is called once per frame
     void Update()
@@ -28,13 +30,19 @@ public class Enemy1 : MonoBehaviour
 
     void MoveToTarget()
     {
-        Vector3 targetPosition = player.position + offsetFromPlayer;    // 목표 위치 계산 (플레이어 위치 + 오프셋)
-        float step = speed * Time.deltaTime;    // 프레임 당 이동할 거리 계산
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, step); // 목표 위치로 이동
+        Vector3 direction = (player.position - transform.position).normalized;  // 플레이어를 향한 방향 계산
+        Vector3 targetPosition = player.position - direction * distanceToMaintain;  // 유지할 거리를 고려한 목표 위치 계산
 
-        if (Vector3.Distance(transform.position, targetPosition) < 0.001f)  // 목표 위치에 도달하면 이동 멈춤
+        // 목표 위치에 도달했는지 확인
+        if (Vector3.Distance(transform.position, targetPosition) > 0.01f)
+        {
+            Vector3 newPosition = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);  // 목표 위치로 이동
+            rb.MovePosition(newPosition);  // Rigidbody2D를 사용하여 이동
+        }
+        else
         {
             isMoving = false;
+            rb.velocity = Vector2.zero;  // 속도 0으로 설정하여 멈춤
         }
     }
 
@@ -45,5 +53,10 @@ public class Enemy1 : MonoBehaviour
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);  // 총알 생성
             nextShootTime = Time.time + shootInterval;  // 다음 발사 시간 갱신
         }
+    }
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();  // Rigidbody2D 컴포넌트 가져오기
     }
 }
