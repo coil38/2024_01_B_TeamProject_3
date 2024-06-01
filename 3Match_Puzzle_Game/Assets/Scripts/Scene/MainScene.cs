@@ -5,8 +5,7 @@ public class MainScene : MonoBehaviour
 {
     public GameObject SelectionStage;
     public GameObject mainScene;
-    
-    private static string soundScene;
+    public GameObject _soundCanvas;
     
     public void QuitGame()
     {
@@ -14,7 +13,7 @@ public class MainScene : MonoBehaviour
     }
     
     public void GotoSelectionStage()
-    {
+    {   
         SelectionStage.gameObject.SetActive(true);
         mainScene.gameObject.SetActive(false);
         SoundManager.instance.PlaySound("ButtonClick");
@@ -46,17 +45,8 @@ public class MainScene : MonoBehaviour
 
     public void SoundSetting()
     {
-        soundScene = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene("SoundSettingScene");
+        _soundCanvas.gameObject.SetActive(true);
+        mainScene.gameObject.SetActive(false);
         SoundManager.instance.PlaySound("ButtonClick");
-    }
-    
-    public void GoBack()
-    {
-        if (!string.IsNullOrEmpty(soundScene))
-        {
-            SceneManager.LoadScene(soundScene);
-            SoundManager.instance.PlaySound("ButtonClick");
-        }
     }
 }

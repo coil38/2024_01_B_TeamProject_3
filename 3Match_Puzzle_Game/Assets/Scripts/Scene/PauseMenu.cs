@@ -7,22 +7,13 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject _pauseMenu;
+    public GameObject _soundCanvas;
 
-    private static string previousScene;
-
-    void Start()
+    public void OpenSoundCanvas()
     {
-        if (SceneManager.GetActiveScene().name != "SettingsScene")
-        { 
-            Resume();
-        }
-        else if (GameIsPaused)
-        {
-            _pauseMenu.SetActive(true);
-            Time.timeScale = 0;
-        }
+        _soundCanvas.gameObject.SetActive(true);
     }
-
+    
     public void Resume()
     {
         SoundManager.instance.PlaySound("ButtonClick");
@@ -56,6 +47,7 @@ public class PauseMenu : MonoBehaviour
     public void OpenPauseMenu()
     {
         SoundManager.instance.PlaySound("ButtonClick");
+        _soundCanvas.gameObject.SetActive(false);
         Pause();
     }
 
@@ -86,16 +78,6 @@ public class PauseMenu : MonoBehaviour
     public void GoToSettings()
     {
         SoundManager.instance.PlaySound("ButtonClick");
-        previousScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("SettingsScene");
-    }
-
-    public void GoBack()
-    {
-        if (!string.IsNullOrEmpty(previousScene))
-        {
-            SceneManager.LoadScene(previousScene);
-            SoundManager.instance.PlaySound("ButtonClick");
-        }
     }
 }

@@ -16,7 +16,7 @@ public class EnemyMovement : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         rb.velocity = new Vector2(-moveSpeed, rb.velocity.y); // 계속해서 왼쪽으로 움직이게 합니다.
 
@@ -28,5 +28,10 @@ public class EnemyMovement : MonoBehaviour
         {
             _animator.SetBool("isMove", true);
         }
+    }
+
+    void Slime1Move()
+    {
+        SoundManager.instance.PlaySound("Slime1_Move");
     }
 }
