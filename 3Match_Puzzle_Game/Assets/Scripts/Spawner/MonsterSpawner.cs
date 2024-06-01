@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -37,7 +38,15 @@ public class MonsterSpawner : MonoBehaviour
         areMonstersAlive = alive;
     }
     
-
+    public void EnemyKilled()
+    {
+        GameObject[] monsters = GameObject.FindGameObjectsWithTag("Enemy");
+        if (monsters.Length == 0)
+        {
+            SetMonstersAlive(false);
+        }
+    }
+    
     void LoadNextStage()
     {
         StartCoroutine(TransitionToNextStage());

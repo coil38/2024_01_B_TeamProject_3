@@ -5,38 +5,34 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 100; // 플레이어의 최대 체력입니다.
-    private int currentHealth; // 현재 체력을 추적합니다.
-    public HealthBar healthBar; // 플레이어의 체력바입니다.
-    
+    public int maxHealth = 100;
+    private int currentHealth;
+    public HealthBar healthBar;
+
     void Start()
     {
-        currentHealth = maxHealth; // 현재 체력을 최대 체력으로 초기화합니다.
-        healthBar.SetMaxHealth(maxHealth); // 체력바를 초기화합니다.
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage; // 데미지만큼 현재 체력을 감소시킵니다.
-        healthBar.SetHealth(currentHealth); // 체력바를 업데이트합니다.
-        Debug.Log("Player Health: " + currentHealth); // 현재 체력을 출력합니다.
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
         if (currentHealth <= 0)
         {
-            Die(); // 현재 체력이 0 이하가 되면 죽음 처리를 합니다.
+            Die();
         }
     }
 
     public void Heal(int amount)
     {
-        Debug.Log("Healing amount: " + amount); // Healing amount 확인
-        currentHealth = Mathf.Min(currentHealth + amount, maxHealth); // currentHealth를 증가시키되 maxHealth를 초과하지 않도록 함
-        healthBar.SetHealth(currentHealth); // 체력바를 업데이트합니다.
-        Debug.Log("Player Health: " + currentHealth); // 현재 체력을 출력합니다.
+        currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
+        healthBar.SetHealth(currentHealth);
     }
-    
+
     void Die()
     {
-        Debug.Log("Player Died"); // 플레이어가 죽었음을 출력합니다.
-        // 플레이어가 죽었을 때의 로직을 구현합니다.
+        Debug.Log("Player Died");
     }
 }

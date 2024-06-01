@@ -6,6 +6,8 @@ public class MainScene : MonoBehaviour
     public GameObject SelectionStage;
     public GameObject mainScene;
     
+    private static string soundScene;
+    
     public void GotoSelectionStage()
     {
         SelectionStage.gameObject.SetActive(true);
@@ -34,7 +36,16 @@ public class MainScene : MonoBehaviour
 
     public void SoundSetting()
     {
+        soundScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("SoundSettingScene");
+    }
+    
+    public void GoBack()
+    {
+        if (!string.IsNullOrEmpty(soundScene))
+        {
+            SceneManager.LoadScene(soundScene);
+        }
     }
 
     public void BackGameScene1()

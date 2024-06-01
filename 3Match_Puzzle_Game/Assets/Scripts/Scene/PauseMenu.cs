@@ -5,45 +5,65 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
+    //public static PauseMenu Instance;
     
-    public GameObject PauseMenu_text;
-    public GameObject SoundMenu_canvas;
+    public static bool GameIsPaused = false;
+    public GameObject _pauseMenu;
+
+    private static string previousScene;
+
+    /*private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // 게임 매니저 오브젝트가 씬 전환 시에도 파괴되지 않도록 설정
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }*/
+    
+    void Start()
+    {
+        if (SceneManager.GetActiveScene().name != "SettingsScene")
+        { 
+            Resume();
+        }
+        else if (GameIsPaused)
+        {
+            _pauseMenu.SetActive(true);
+            Time.timeScale = 0;
+        }
+    }
 
     public void Resume()
     {
-        PauseMenu_text.SetActive(false);
+        _pauseMenu.SetActive(false);
         Time.timeScale = 1;
         GameIsPaused = false;
     }
 
     void Pause()
     {
-        PauseMenu_text.SetActive(true);
+        _pauseMenu.SetActive(true);
         Time.timeScale = 0;
         GameIsPaused = true;
-        SoundMenu_canvas.SetActive(false);
     }
 
     public void LoadMenu()
     {
         Time.timeScale = 1;
+        GameIsPaused = false;
         SceneManager.LoadScene("MainScene");
     }
 
-    public void SoundMenu()
-    {
-        SoundMenu_canvas.SetActive(true);
-        PauseMenu_text.SetActive(false);
-        Time.timeScale = 0;
-        GameIsPaused = true;
-    }
-    
     public void QuitGame()
     {
         Application.Quit();
     }
-    
+
     public void OpenPauseMenu()
     {
         Pause();
@@ -55,18 +75,32 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
         SceneManager.LoadScene("Stage1");
     }
-    
+
     public void LoadGame2()
     {
         Time.timeScale = 1;
         GameIsPaused = false;
         SceneManager.LoadScene("Stage2");
     }
-    
+
     public void LoadGame3()
     {
         Time.timeScale = 1;
         GameIsPaused = false;
         SceneManager.LoadScene("Stage3");
+    }
+
+    public void GoToSettings()
+    {
+        previousScene = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene("SettingsScene");
+    }
+
+    public void GoBack()
+    {
+        if (!string.IsNullOrEmpty(previousScene))
+        {
+            SceneManager.LoadScene(previousScene);
+        }
     }
 }

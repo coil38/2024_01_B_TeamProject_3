@@ -37,13 +37,13 @@ public class Attack : MonoBehaviour
 
     void Start()
     {
-        // ScoreCounter의 인스턴스를 가져옴
         _scoreCounter = ScoreCounter.Instance;
+        
+        playerHealth = FindObjectOfType<PlayerHealth>();
     }
     
     void Update()
     {
-        // 버튼 잠금/잠금 해제
         meleeAttackButton.interactable = _scoreCounter.Score >= meleeAttackCost;
         fireAttackButton.interactable = _scoreCounter.Score >= fireAttackCost;
         iceAttackButton.interactable = _scoreCounter.Score >= iceAttackCost;
@@ -51,53 +51,41 @@ public class Attack : MonoBehaviour
         bowAttackButton.interactable = _scoreCounter.Score >= bowAttackCost;
     }
 
-    // 근접 공격 호출 메서드
     public void MeleeAttack()
     {
         PerformAttack(meleeAttackCost, "근접");
     }
 
-    // 불 공격 호출 메서드
     public void FireAttack()
     {
         PerformAttack(fireAttackCost, "불");
     }
 
-    // 얼음 공격 호출 메서드
     public void IceAttack()
     {
         PerformAttack(iceAttackCost, "얼음");
     }
 
-    // 플레이어 힐 호출 메서드
     public void PlayerHeal()
     {
         PerformHeal(playerHealCost);
     }
 
-    // 활 공격 호출 메서드
     public void BowAttack()
     {
         PerformAttack(bowAttackCost, "활");
     }
 
-    // 각 공격에 대한 호출 메서드
     private void PerformAttack(int cost, string attackType)
     {
-        // 플레이어의 점수가 공격에 필요한 점수보다 충분한지 확인
         if (_scoreCounter.Score >= cost)
         {
-            // 점수를 감소시킴
             _scoreCounter.Score -= cost;
-            
             Debug.Log($"코스트 {cost} 의 {attackType} 공격을 실행합니다!");
-
-            // BulletSpawner의 SpawnBullet() 메서드 호출
             bulletSpawner.SpawnBullet(); 
         }
     }
-    
-    // 힐에 대한 호출 메서드
+
     private void PerformHeal(int cost)
     {
         // 플레이어의 점수가 힐에 필요한 점수보다 충분한지 확인
