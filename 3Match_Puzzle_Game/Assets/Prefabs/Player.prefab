@@ -184,8 +184,8 @@ GameObject:
   - component: {fileID: 2125478495032690697}
   - component: {fileID: 51562086762772353}
   - component: {fileID: 4467552703739076533}
-  - component: {fileID: 2900712152585269155}
   - component: {fileID: 5206594960823512461}
+  - component: {fileID: 2900712152585269155}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -350,6 +350,20 @@ MonoBehaviour:
   bullet_prefab: {fileID: 3928302621148496416, guid: 25b64692de3bf7a458742d047899fc8a, type: 3}
   spqwn_rate_min: 0.5
   spqwn_rate_max: 1.5
+--- !u!114 &5206594960823512461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4824716643629647667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191c04e8b57f3c04088538a2f373381c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  healthBar: {fileID: 7097734402935276161}
 --- !u!95 &2900712152585269155
 Animator:
   serializedVersion: 5
@@ -371,20 +385,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5206594960823512461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4824716643629647667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 191c04e8b57f3c04088538a2f373381c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  healthBar: {fileID: 7097734402935276161}
 --- !u!1 &4870587541463554997
 GameObject:
   m_ObjectHideFlags: 0

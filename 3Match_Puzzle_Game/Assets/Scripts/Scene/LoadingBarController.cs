@@ -16,6 +16,7 @@ public class LoadingBarController : MonoBehaviour
     }
     void Start()
     {
+        progressBar.fillAmount = 0f;  // 초기화
         StartCoroutine(LoadSceneProcess());
     }
 
@@ -36,7 +37,7 @@ public class LoadingBarController : MonoBehaviour
             else
             {
                 timer += Time.unscaledDeltaTime;
-                progressBar.fillAmount = Mathf.Lerp(0.9f, 1f, timer);
+                progressBar.fillAmount = Mathf.Lerp(0.9f, 1f, timer / 2); // 더 천천히 채워지도록 설정
                 if (progressBar.fillAmount >= 1f)
                 {
                     op.allowSceneActivation = true;
