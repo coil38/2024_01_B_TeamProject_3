@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Enemy1 : MonoBehaviour
 {
-    public float speed = 3.0f;  // 적의 이동 속도
-    public Transform player;    // 플레이어의 Transform
-    public float distanceToMaintain = 1.0f;  // 플레이어와의 유지 거리
     public GameObject bulletPrefab;     // 발사할 총알 프리팹
     public Transform firePoint;         // 총알이 발사될 위치
+    public Transform player;    // 플레이어의 Transfor
+    
+    public float distanceToMaintain = 1.0f;  // 플레이어와의 유지 거리
+    public float speed = 3.0f;  // 적의 이동 속도
     public float shootInterval = 1.0f;  // 총알 발사 간격
     private float nextShootTime = 0f;   // 다음 발사 시간
+    
     private bool isMoving = true;       // 적이 이동 중인지 여부
-
+    
     private Rigidbody2D rb;
     
     void Start()
