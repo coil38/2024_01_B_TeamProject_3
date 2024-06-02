@@ -11,6 +11,8 @@ public class PlayerHealth : MonoBehaviour
     public HealthBar healthBar;
     private Animator _animator;
 
+    public GameObject GameOverText;
+    
     void Start()
     {
         currentHealth = maxHealth;
@@ -37,6 +39,8 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
+        GameOverText.gameObject.SetActive(true);
+        Time.timeScale = 0;
         Debug.Log("Player Died");
     }
 }

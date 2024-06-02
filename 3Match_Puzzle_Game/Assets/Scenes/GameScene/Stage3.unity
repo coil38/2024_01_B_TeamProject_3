@@ -3515,9 +3515,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: LoadMenu
+      - m_Target: {fileID: 1623682520}
+        m_TargetAssemblyTypeName: MainScene, Assembly-CSharp
+        m_MethodName: GotoMain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4511,6 +4511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5206594960823512461, guid: c7c4aa98f15a04c7a985d303d513c62f, type: 3}
+      propertyPath: GameOverText
+      value: 
+      objectReference: {fileID: 273361480}
     - target: {fileID: 5732731001967146796, guid: c7c4aa98f15a04c7a985d303d513c62f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.52
@@ -5825,7 +5829,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: bc8ff7435cd439f4c91e902d4e614e2f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 419a77bd21028c4418ecd5e84ee7cca3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5833,7 +5837,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!222 &1554520636
@@ -8118,9 +8122,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1623682519}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: LoadGame1
+        m_MethodName: LoadGame3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
