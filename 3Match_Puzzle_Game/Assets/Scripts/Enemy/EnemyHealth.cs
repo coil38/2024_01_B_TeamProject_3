@@ -10,11 +10,14 @@ public class EnemyHealth : MonoBehaviour
 
     private Animator _animator;
 
+    private Collider2D enemyCollider;
+
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         _animator = GetComponent<Animator>();
+        enemyCollider = GetComponent<Collider2D>();
     }
 
     public void TakeDamage(int damage)
@@ -35,6 +38,7 @@ public class EnemyHealth : MonoBehaviour
     void Die()
     {
         _animator.SetTrigger("doDead");
+        enemyCollider.enabled = false;
         StartCoroutine(DeadRoutine());
     }
 
