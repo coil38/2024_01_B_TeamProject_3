@@ -11,6 +11,8 @@ public class EnemyMovement1 : MonoBehaviour
     public float maxDistance = 10f; // Player와의 최대 거리
     public float fireRate = 2f; // Bullet 발사 주기
     private float nextFireTime; // 다음 발사 시간
+    
+    private Animator _animator;
 
     private Rigidbody2D rb; // Rigidbody2D 컴포넌트에 접근하기 위한 변수
     private bool isMoving = true; // 이동 중인지 여부를 나타내는 변수
@@ -21,13 +23,9 @@ public class EnemyMovement1 : MonoBehaviour
         rb = GetComponent<Rigidbody2D>(); // Rigidbody2D 컴포넌트에 접근
         player = GameObject.FindGameObjectWithTag("Player").transform; // Player를 찾아서 Transform 저장
         nextFireTime = Time.time; // 다음 발사 시간 초기화
+        _animator = GetComponent<Animator>();
     }
 
-    
-    void Update()
-    {
-
-    }
     void FixedUpdate()
     {
         if (player != null)
@@ -45,12 +43,14 @@ public class EnemyMovement1 : MonoBehaviour
             }
             else
             {
+                _animator.SetBool("isMove", true);
                 isMoving = false;
             }
 
             // 적이 Player를 향해 Bullet을 발사하는 로직
             if (!isMoving && Time.time > nextFireTime)
             {
+                _animator.SetBool("isAttack", true);
                 // Bullet 발사
                 GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
                 // Bullet을 Player를 향해 발사
