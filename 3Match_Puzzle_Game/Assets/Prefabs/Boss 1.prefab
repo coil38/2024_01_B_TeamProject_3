@@ -410,7 +410,7 @@ GameObject:
   - component: {fileID: 3274141885393022434}
   - component: {fileID: 6456740289796463772}
   - component: {fileID: 3186668859338441622}
-  - component: {fileID: 336618022014379288}
+  - component: {fileID: -8375543742795847618}
   m_Layer: 6
   m_Name: Boss 1
   m_TagString: Enemy
@@ -605,7 +605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   healthBar: {fileID: 2744465816130097955}
---- !u!114 &336618022014379288
+--- !u!114 &-8375543742795847618
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -614,15 +614,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7739889142381410034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62be11525918f4029b71fa6612462762, type: 3}
+  m_Script: {fileID: 11500000, guid: daed666237100184b8f95ac0b55a3d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 3928302621148496416, guid: db3d6a571941541f5872b477d758f586, type: 3}
-  firePoint: {fileID: 1105478888065748080}
   player: {fileID: 5732731001967146796, guid: c7c4aa98f15a04c7a985d303d513c62f, type: 3}
-  distanceToMaintain: 3
-  speed: 0.1
-  shootInterval: 3
+  bulletPrefab: {fileID: 3928302621148496416, guid: db3d6a571941541f5872b477d758f586, type: 3}
+  moveSpeed: 0.05
+  minDistance: 2
+  maxDistance: 10
+  fireRate: 2
 --- !u!1 &8082339547414430469
 GameObject:
   m_ObjectHideFlags: 0
