@@ -712,7 +712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 5732731001967146796, guid: c7c4aa98f15a04c7a985d303d513c62f, type: 3}
   bulletPrefab: {fileID: 3928302621148496416, guid: db3d6a571941541f5872b477d758f586, type: 3}
-  moveSpeed: 1
+  moveSpeed: 0.05
   minDistance: 2
   maxDistance: 10
   fireRate: 2
