@@ -38,7 +38,7 @@ public class EnemyHealth : MonoBehaviour
     void Die()
     {
         _animator.SetTrigger("doDead");
-        enemyCollider.enabled = false;
+        enemyCollider.enabled = false;      
         StartCoroutine(DeadRoutine());
     }
 
