@@ -16,13 +16,40 @@ public class Player : MonoBehaviour
 
             if (hit.collider != null)
             {
-                selectedObject = hit.transform.gameObject;
-                Debug.Log("선택한 적 : " + selectedObject.name);
-
-                BulletSpawner bulletSpawner = FindObjectOfType<BulletSpawner>();
-                if (bulletSpawner != null)
+                if (selectedObject != null)
                 {
-                    bulletSpawner.SetTarget(selectedObject);
+                    // 이전에 선택된 적의 타겟 이미지를 비활성화
+                    Transform previousCanvas = selectedObject.transform.Find("Canvas");
+                    if (previousCanvas != null)
+                    {
+                        Transform previousTargetImage = previousCanvas.Find("TargetImage");
+                        if (previousTargetImage != null)
+                        {
+                            previousTargetImage.gameObject.SetActive(false);
+                        }
+                    }
+                }
+
+                selectedObject = hit.transform.gameObject;
+
+                if (selectedObject.tag == "Enemy")
+                {
+                    Transform canvas = selectedObject.transform.Find("Canvas");
+                    if (canvas != null)
+                    {
+                        Transform targetImage = canvas.Find("TargetImage");
+                        if (targetImage != null)
+                        {
+                            targetImage.gameObject.SetActive(true);
+                            Debug.Log("선택한 적 : " + selectedObject.name);
+                        }
+                    }
+
+                    BulletSpawner bulletSpawner = FindObjectOfType<BulletSpawner>();
+                    if (bulletSpawner != null)
+                    {
+                        bulletSpawner.SetTarget(selectedObject);
+                    }
                 }
             }
         }
