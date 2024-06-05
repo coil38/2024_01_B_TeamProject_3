@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public enum BulletType { Melee, Magical, Spear, Bow }
+    public BulletType bulletType; // ≈∫æÀ¿« ≈∏¿‘
     public float speed = 8f;
     public int damage = 20;
     private Rigidbody2D rigid;
@@ -20,7 +22,7 @@ public class Bullet : MonoBehaviour
             EnemyHealth enemyHealth = collision.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(damage);
+                enemyHealth.TakeDamage(damage, bulletType);
                 gameObject.SetActive(false);
             }
         }

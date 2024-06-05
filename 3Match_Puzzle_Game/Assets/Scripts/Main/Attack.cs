@@ -53,41 +53,35 @@ public class Attack : MonoBehaviour
 
     public void MeleeAttack()
     {
-        PerformAttack(meleeAttackCost, bulletSpawner.meleeBulletPrefab);
+        PerformAttack(meleeAttackCost, bulletSpawner.meleeBulletPrefab, Bullet.BulletType.Melee);
         SoundManager.instance.PlaySound("Melee");
     }
 
     public void MagicalAttack()
     {
-        PerformAttack(magicalAttackCost, bulletSpawner.magicalBulletPrefab);
-        SoundManager.instance.PlaySound("Magcial");
+        PerformAttack(magicalAttackCost, bulletSpawner.magicalBulletPrefab, Bullet.BulletType.Magical);
+        SoundManager.instance.PlaySound("Magical");
     }
 
     public void SpearAttack()
     {
-        PerformAttack(spearAttackCost, bulletSpawner.spearBulletPrefab);
+        PerformAttack(spearAttackCost, bulletSpawner.spearBulletPrefab, Bullet.BulletType.Spear);
         SoundManager.instance.PlaySound("Spear");
-    }
-
-    public void PlayerHeal()
-    {
-        PerformHeal(playerHealCost);
-        SoundManager.instance.PlaySound("Healing");
     }
 
     public void BowAttack()
     {
-        PerformAttack(bowAttackCost, bulletSpawner.bowBulletPrefab);
+        PerformAttack(bowAttackCost, bulletSpawner.bowBulletPrefab, Bullet.BulletType.Bow);
         SoundManager.instance.PlaySound("Crossbow");
     }
 
-    private void PerformAttack(int cost, GameObject bulletPrefab)
+    private void PerformAttack(int cost, GameObject bulletPrefab, Bullet.BulletType bulletType)
     {
         if (_scoreCounter.Score >= cost)
         {
             _scoreCounter.Score -= cost;
             Debug.Log($"코스트 {cost} 의 공격 {bulletPrefab} 을 실행합니다!");
-            bulletSpawner.SpawnBullet(bulletPrefab); 
+            bulletSpawner.SpawnBullet(bulletPrefab, bulletType); 
         }
     }
 

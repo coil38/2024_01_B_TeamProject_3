@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public enum AttackType { Melee, Magical, Spear, Bow }
+    public List<AttackType> allowedAttackTypes; // 허용되는 공격 타입 리스트
+
     public int maxHealth = 50;
     private int currentHealth;
     public HealthBar healthBar;
 
     private Animator _animator;
-
     private Collider2D enemyCollider;
 
     void Start()
@@ -20,18 +22,22 @@ public class EnemyHealth : MonoBehaviour
         enemyCollider = GetComponent<Collider2D>();
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, Bullet.BulletType bulletType)
     {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        // 탄알 타입이 허용되는 타입에 포함될 때만 데미지 적용
+        if (allowedAttackTypes.Contains((AttackType)bulletType))
+        {
+            currentHealth -= damage;
+            healthBar.SetHealth(currentHealth);
 
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-        else
-        {
-            _animator.SetTrigger("doDamaged");
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
+            else
+            {
+                _animator.SetTrigger("doDamaged");
+            }
         }
     }
 

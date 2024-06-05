@@ -38,8 +38,8 @@ public class BulletSpawner : MonoBehaviour
             timeAfterSpawn = 0;
         }
     }
-    
-    public void SpawnBullet(GameObject bulletPrefab)
+
+    public void SpawnBullet(GameObject bulletPrefab, Bullet.BulletType bulletType)
     {
         if (target != null)
         {
@@ -56,6 +56,10 @@ public class BulletSpawner : MonoBehaviour
             // 총알이 적(Enemy)을 향하도록 회전
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             bullet.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+            // 총알 타입 설정
+            Bullet bulletScript = bullet.GetComponent<Bullet>();
+            bulletScript.bulletType = bulletType;
         }
         else
         {

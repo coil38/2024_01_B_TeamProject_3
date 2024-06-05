@@ -1204,7 +1204,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
     source: {fileID: 0}
-  - name: Magcial
+  - name: Magical
     clip: {fileID: 8300000, guid: 5e1a9f876d3dafd47bc6b3dde25135fa, type: 3}
     volume: 1
     pitch: 1
