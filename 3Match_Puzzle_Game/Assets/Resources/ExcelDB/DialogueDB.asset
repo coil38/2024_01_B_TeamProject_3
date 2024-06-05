@@ -21,7 +21,7 @@ MonoBehaviour:
       dialogue: "\uB2E4\uC774\uC5BC\uB85C\uADF8 \uD14C\uC2A4\uD2B8 \uB2E4\uC774\uC5BC\uB85C\uADF8
         \uD14C\uC2A4\uD2B8 \uB2E4\uC774\uC5BC\uB85C\uADF8 \uD14C\uC2A4\uD2B8 001"
       characterPath: Character/00001
-      BackGroundPath: BackGround/00001
+      BackGroundPath: "BackGround/\uBC30\uACBD1"
       tweenType: 0
       nextindex: 1
       selectIndex: -100
