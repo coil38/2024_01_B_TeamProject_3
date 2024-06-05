@@ -41,6 +41,7 @@ public class PlayerHealth : MonoBehaviour
     {
         GameOverText.gameObject.SetActive(true);
         Time.timeScale = 0;
+        _animator.SetTrigger("doDead");
         Debug.Log("Player Died");
     }
 }
