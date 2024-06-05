@@ -75,6 +75,12 @@ public class Attack : MonoBehaviour
         SoundManager.instance.PlaySound("Crossbow");
     }
 
+    public void PlayerHeal()
+    {
+        PerformHeal(playerHealCost);
+        SoundManager.instance.PlaySound("Healing");
+    }
+    
     private void PerformAttack(int cost, GameObject bulletPrefab, Bullet.BulletType bulletType)
     {
         if (_scoreCounter.Score >= cost)
