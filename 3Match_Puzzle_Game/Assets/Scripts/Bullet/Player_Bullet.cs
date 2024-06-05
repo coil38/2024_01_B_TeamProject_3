@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Player_Bullet : MonoBehaviour
 {
     public enum BulletType { Melee, Magical, Spear, Bow }
     public BulletType bulletType; // 탄알의 타입

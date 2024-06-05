@@ -53,25 +53,25 @@ public class Attack : MonoBehaviour
 
     public void MeleeAttack()
     {
-        PerformAttack(meleeAttackCost, bulletSpawner.meleeBulletPrefab, Bullet.BulletType.Melee);
+        PerformAttack(meleeAttackCost, bulletSpawner.meleeBulletPrefab, Player_Bullet.BulletType.Melee);
         SoundManager.instance.PlaySound("Melee");
     }
 
     public void MagicalAttack()
     {
-        PerformAttack(magicalAttackCost, bulletSpawner.magicalBulletPrefab, Bullet.BulletType.Magical);
+        PerformAttack(magicalAttackCost, bulletSpawner.magicalBulletPrefab, Player_Bullet.BulletType.Magical);
         SoundManager.instance.PlaySound("Magical");
     }
 
     public void SpearAttack()
     {
-        PerformAttack(spearAttackCost, bulletSpawner.spearBulletPrefab, Bullet.BulletType.Spear);
+        PerformAttack(spearAttackCost, bulletSpawner.spearBulletPrefab, Player_Bullet.BulletType.Spear);
         SoundManager.instance.PlaySound("Spear");
     }
 
     public void BowAttack()
     {
-        PerformAttack(bowAttackCost, bulletSpawner.bowBulletPrefab, Bullet.BulletType.Bow);
+        PerformAttack(bowAttackCost, bulletSpawner.bowBulletPrefab, Player_Bullet.BulletType.Bow);
         SoundManager.instance.PlaySound("Crossbow");
     }
 
@@ -81,7 +81,7 @@ public class Attack : MonoBehaviour
         SoundManager.instance.PlaySound("Healing");
     }
     
-    private void PerformAttack(int cost, GameObject bulletPrefab, Bullet.BulletType bulletType)
+    private void PerformAttack(int cost, GameObject bulletPrefab, Player_Bullet.BulletType bulletType)
     {
         if (_scoreCounter.Score >= cost)
         {

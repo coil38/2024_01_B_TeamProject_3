@@ -22,7 +22,7 @@ public class EnemyHealth : MonoBehaviour
         enemyCollider = GetComponent<Collider2D>();
     }
 
-    public void TakeDamage(int damage, Bullet.BulletType bulletType)
+    public void TakeDamage(int damage, Player_Bullet.BulletType bulletType)
     {
         // 탄알 타입이 허용되는 타입에 포함될 때만 데미지 적용
         if (allowedAttackTypes.Contains((AttackType)bulletType))

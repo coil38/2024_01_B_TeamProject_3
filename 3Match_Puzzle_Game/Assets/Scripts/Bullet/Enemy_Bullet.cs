@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet1 : MonoBehaviour
+public class Enemy_Bullet : MonoBehaviour
 {
     public float speed = 8f; //탄알 이동 속력
     public int damage = 20; // 탄알이 적에게 줄 데미지
