@@ -531,7 +531,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7302085288321879988}
@@ -696,7 +696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af013ad55ebb64a7cbcd10517b384663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 70
+  maxHealth: 30
   healthBar: {fileID: 6665345106077946060}
 --- !u!114 &8345874230956768777
 MonoBehaviour:
@@ -711,7 +711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5732731001967146796, guid: c7c4aa98f15a04c7a985d303d513c62f, type: 3}
-  bulletPrefab: {fileID: 3928302621148496416, guid: db3d6a571941541f5872b477d758f586, type: 3}
+  bulletPrefab: {fileID: 3928302621148496416, guid: 941927cf038df3d4fb4bce4f867c49f5, type: 3}
   moveSpeed: 0.05
   minDistance: 2
   maxDistance: 10

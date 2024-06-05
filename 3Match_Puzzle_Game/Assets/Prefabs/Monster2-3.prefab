@@ -621,7 +621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af013ad55ebb64a7cbcd10517b384663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 70
+  maxHealth: 10
   healthBar: {fileID: 7700043064569498297}
 --- !u!114 &-9221119388688745205
 MonoBehaviour:
@@ -636,7 +636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5732731001967146796, guid: c7c4aa98f15a04c7a985d303d513c62f, type: 3}
-  bulletPrefab: {fileID: 3928302621148496416, guid: db3d6a571941541f5872b477d758f586, type: 3}
+  bulletPrefab: {fileID: 3928302621148496416, guid: b4b6c5e68e9629943bb2a39a9de30f5d, type: 3}
   moveSpeed: 0.05
   minDistance: 2
   maxDistance: 10

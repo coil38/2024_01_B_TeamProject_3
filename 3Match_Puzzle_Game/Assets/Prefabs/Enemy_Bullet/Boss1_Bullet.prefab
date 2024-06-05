@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2279487086124881787}
   - component: {fileID: 5589391720059323148}
   - component: {fileID: 6728700277924203032}
-  - component: {fileID: 7529919286215190162}
+  - component: {fileID: 2886559915306147206}
   m_Layer: 0
-  m_Name: Player_Bullet
+  m_Name: Boss1_Bullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,7 +149,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7529919286215190162
+--- !u!114 &2886559915306147206
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +158,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 3928302621148496416}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17ada4193fb2db541b6d8455780cc837, type: 3}
+  m_Script: {fileID: 11500000, guid: a5f111c7b53f84586a7569fbb84d8bda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 5
+  damage: 5

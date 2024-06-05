@@ -14,14 +14,14 @@ public class Attack : MonoBehaviour
 
     // 공격에 필요한 점수
     public int meleeAttackCost = 50;
-    public int magcialAttackCost = 100;
+    public int magicalAttackCost = 100;
     public int spearAttackCost = 70;
     public int playerHealCost = 50;
     public int bowAttackCost = 30;
 
     // 공격 버튼 참조
     public Button meleeAttackButton;
-    public Button magcialAttackButton;
+    public Button magicalAttackButton;
     public Button spearAttackButton;
     public Button playerHealButton;
     public Button bowAttackButton;
@@ -45,7 +45,7 @@ public class Attack : MonoBehaviour
     void Update()
     {
         meleeAttackButton.interactable = _scoreCounter.Score >= meleeAttackCost;
-        magcialAttackButton.interactable = _scoreCounter.Score >= magcialAttackCost;
+        magicalAttackButton.interactable = _scoreCounter.Score >= magicalAttackCost;
         spearAttackButton.interactable = _scoreCounter.Score >= spearAttackCost;
         playerHealButton.interactable = _scoreCounter.Score >= playerHealCost;
         bowAttackButton.interactable = _scoreCounter.Score >= bowAttackCost;
@@ -53,20 +53,19 @@ public class Attack : MonoBehaviour
 
     public void MeleeAttack()
     {
-        PerformAttack(meleeAttackCost, "근접");
+        PerformAttack(meleeAttackCost, bulletSpawner.meleeBulletPrefab);
         SoundManager.instance.PlaySound("Melee");
-        
     }
 
-    public void MagcialAttack()
+    public void MagicalAttack()
     {
-        PerformAttack(magcialAttackCost, "마법");
+        PerformAttack(magicalAttackCost, bulletSpawner.magicalBulletPrefab);
         SoundManager.instance.PlaySound("Magcial");
     }
 
     public void SpearAttack()
     {
-        PerformAttack(spearAttackCost, "창");
+        PerformAttack(spearAttackCost, bulletSpawner.spearBulletPrefab);
         SoundManager.instance.PlaySound("Spear");
     }
 
@@ -78,17 +77,17 @@ public class Attack : MonoBehaviour
 
     public void BowAttack()
     {
-        PerformAttack(bowAttackCost, "활");
+        PerformAttack(bowAttackCost, bulletSpawner.bowBulletPrefab);
         SoundManager.instance.PlaySound("Crossbow");
     }
 
-    private void PerformAttack(int cost, string attackType)
+    private void PerformAttack(int cost, GameObject bulletPrefab)
     {
         if (_scoreCounter.Score >= cost)
         {
             _scoreCounter.Score -= cost;
-            Debug.Log($"코스트 {cost} 의 {attackType} 공격을 실행합니다!");
-            bulletSpawner.SpawnBullet(); 
+            Debug.Log($"코스트 {cost} 의 공격 {bulletPrefab} 을 실행합니다!");
+            bulletSpawner.SpawnBullet(bulletPrefab); 
         }
     }
 
@@ -103,7 +102,7 @@ public class Attack : MonoBehaviour
             // 플레이어 힐
             if (playerHealth != null)
             {
-                playerHealth.Heal(30);
+                playerHealth.Heal(5);
             }
 
             Debug.Log($"코스트 {cost} 를 사용하여 플레이어를 힐합니다!");

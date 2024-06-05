@@ -347,9 +347,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33595c287a98cf64aba3c2709695d427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet_prefab: {fileID: 3928302621148496416, guid: 25b64692de3bf7a458742d047899fc8a, type: 3}
-  spqwn_rate_min: 0.5
-  spqwn_rate_max: 1.5
+  meleeBulletPrefab: {fileID: 3928302621148496416, guid: 25b64692de3bf7a458742d047899fc8a, type: 3}
+  magicalBulletPrefab: {fileID: 3928302621148496416, guid: 42ce49876d9f1664b977c8df3e689d8c, type: 3}
+  spearBulletPrefab: {fileID: 3928302621148496416, guid: cac2aa4964c865142a23fe5bd6944ea4, type: 3}
+  bowBulletPrefab: {fileID: 3928302621148496416, guid: ab9f4836ed1e268448f9b0fc7e27e446, type: 3}
+  spawnRateMin: 0.5
+  spawnRateMax: 1.5
 --- !u!114 &5206594960823512461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,7 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 191c04e8b57f3c04088538a2f373381c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 50
   healthBar: {fileID: 7097734402935276161}
   GameOverText: {fileID: 0}
 --- !u!95 &2900712152585269155

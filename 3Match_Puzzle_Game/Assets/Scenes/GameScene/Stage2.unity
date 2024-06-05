@@ -3468,7 +3468,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2039691437}
         m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: MagcialAttack
+        m_MethodName: MagicalAttack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8630,12 +8630,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meleeAttackCost: 50
-  magcialAttackCost: 100
+  magicalAttackCost: 100
   spearAttackCost: 70
   playerHealCost: 50
   bowAttackCost: 30
   meleeAttackButton: {fileID: 782662325}
-  magcialAttackButton: {fileID: 770382924}
+  magicalAttackButton: {fileID: 770382924}
   spearAttackButton: {fileID: 1865841379}
   playerHealButton: {fileID: 165758464}
   bowAttackButton: {fileID: 393919661}
