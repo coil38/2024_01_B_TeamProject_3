@@ -7,6 +7,10 @@ public class MainScene : MonoBehaviour
     public GameObject mainScene;
     public GameObject _soundCanvas;
     
+    public GameObject _selectionStage1;
+    public GameObject _selectionStage2;
+    public GameObject _selectionStage3;
+    
     public void QuitGame()
     {
         Application.Quit();
@@ -15,7 +19,34 @@ public class MainScene : MonoBehaviour
     public void GotoSelectionStage()
     {   
         SelectionStage.gameObject.SetActive(true);
+        _selectionStage1.gameObject.SetActive(false);
+        _selectionStage2.gameObject.SetActive(false);
+        _selectionStage3.gameObject.SetActive(false);
         mainScene.gameObject.SetActive(false);
+        SoundManager.instance.PlaySound("ButtonClick");
+    }
+
+    public void SelectionStage1()
+    {
+        _selectionStage1.gameObject.SetActive(true);
+        SelectionStage.gameObject.SetActive(false);
+        SoundManager.instance.PlaySound("ButtonClick");
+    }
+    
+    public void SelectionStage2()
+    {
+        _selectionStage1.gameObject.SetActive(false);
+        _selectionStage2.gameObject.SetActive(true);
+        SelectionStage.gameObject.SetActive(false);
+        SoundManager.instance.PlaySound("ButtonClick");
+    }
+    
+    public void SelectionStage3()
+    {
+        _selectionStage1.gameObject.SetActive(false);
+        _selectionStage2.gameObject.SetActive(false);
+        _selectionStage3.gameObject.SetActive(true);
+        SelectionStage.gameObject.SetActive(false);
         SoundManager.instance.PlaySound("ButtonClick");
     }
 
