@@ -1529,7 +1529,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1053655384}
         m_TargetAssemblyTypeName: MainScene, Assembly-CSharp
-        m_MethodName: GoToStage2
+        m_MethodName: GoToStage4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3015,7 +3015,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1053655384}
         m_TargetAssemblyTypeName: MainScene, Assembly-CSharp
-        m_MethodName: GoToStage3
+        m_MethodName: GoToStage7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

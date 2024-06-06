@@ -113,7 +113,7 @@ MonoBehaviour:
       tweenType: 0
       nextindex: 9
       selectIndex: -100
-      nextScene: None
+      nextScene: Text_004_Scene
     - index: 9
       speakerUIindex: 1
       name: "\uC774\uB984_010"

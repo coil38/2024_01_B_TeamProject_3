@@ -10,7 +10,7 @@ public class MonsterSpawner : MonoBehaviour
     public Transform spawnPoint;
 
     private bool areMonstersAlive;
-    private int maxStages = 3; // 최대 스테이지 수
+    private int maxStages = 9; // 최대 스테이지 수
     
     public GameObject gameClear;
 

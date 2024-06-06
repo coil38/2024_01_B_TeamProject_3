@@ -42,6 +42,42 @@ public class MainScene : MonoBehaviour
         LoadingBarController.LoadScene("Stage3");  
         SoundManager.instance.PlaySound("ButtonClick");
     }
+    
+    public void GoToStage4()
+    {
+        LoadingBarController.LoadScene("Stage4");  
+        SoundManager.instance.PlaySound("ButtonClick");
+    }
+    
+    public void GoToStage5()
+    {
+        LoadingBarController.LoadScene("Stage5");  
+        SoundManager.instance.PlaySound("ButtonClick");
+    }
+    
+    public void GoToStage6()
+    {
+        LoadingBarController.LoadScene("Stage6");  
+        SoundManager.instance.PlaySound("ButtonClick");
+    }
+    
+    public void GoToStage7()
+    {
+        LoadingBarController.LoadScene("Stage7");  
+        SoundManager.instance.PlaySound("ButtonClick");
+    }
+    
+    public void GoToStage8()
+    {
+        LoadingBarController.LoadScene("Stage8");  
+        SoundManager.instance.PlaySound("ButtonClick");
+    }
+    
+    public void GoToStage9()
+    {
+        LoadingBarController.LoadScene("Stage9");  
+        SoundManager.instance.PlaySound("ButtonClick");
+    }
 
     public void SoundSetting()
     {
