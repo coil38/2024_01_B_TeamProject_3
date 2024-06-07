@@ -20,7 +20,7 @@ MonoBehaviour:
       name: "\uC774\uB984_001"
       dialogue: "\uB2E4\uC774\uC5BC\uB85C\uADF8 \uD14C\uC2A4\uD2B8 \uB2E4\uC774\uC5BC\uB85C\uADF8
         \uD14C\uC2A4\uD2B8 \uB2E4\uC774\uC5BC\uB85C\uADF8 \uD14C\uC2A4\uD2B8 001"
-      characterPath: Character/00001
+      characterPath: Character/01
       BackGroundPath: "BackGround/\uBC30\uACBD1"
       tweenType: 0
       nextindex: 1
@@ -113,7 +113,7 @@ MonoBehaviour:
       tweenType: 0
       nextindex: 9
       selectIndex: -100
-      nextScene: Text_004_Scene
+      nextScene: None
     - index: 9
       speakerUIindex: 1
       name: "\uC774\uB984_010"
@@ -135,7 +135,7 @@ MonoBehaviour:
       tweenType: 0
       nextindex: 11
       selectIndex: -100
-      nextScene: None
+      nextScene: Stage1
     - index: 11
       speakerUIindex: 1
       name: "\uC774\uB984_012"

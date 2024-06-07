@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +12,31 @@ public class MainScene : MonoBehaviour
     public GameObject _selectionStage1;
     public GameObject _selectionStage2;
     public GameObject _selectionStage3;
+
+    private IEnumerator TransitionToNextStage()
+    {
+        // 페이드 아웃 효과
+        FadeEffect fadeEffect = FindObjectOfType<FadeEffect>();
+    
+        if (fadeEffect != null)
+        {
+            yield return StartCoroutine(fadeEffect.Fade(0f, 1f)); // 페이드 아웃
+        }
+    
+        // 씬 로드
+        LoadingBarController.LoadScene("MainStoryScene");
+    
+        // 페이드 인 효과
+        if (fadeEffect != null)
+        {
+            yield return StartCoroutine(fadeEffect.Fade(1f, 0f)); // 페이드 인 (시간은 0.5초로 설정)
+        }
+    }
+    
+    public void MainStoryScene()
+    {
+        StartCoroutine(TransitionToNextStage());
+    }
     
     public void QuitGame()
     {
