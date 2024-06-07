@@ -676,7 +676,6 @@ GameObject:
   m_Component:
   - component: {fileID: 286207885}
   - component: {fileID: 286207884}
-  - component: {fileID: 286207883}
   m_Layer: 0
   m_Name: AudioMixerController
   m_TagString: Untagged
@@ -684,18 +683,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &286207883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 286207882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd9597d8c7a36f94c9cf0f4a035a1354, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &286207884
 MonoBehaviour:
   m_ObjectHideFlags: 0
