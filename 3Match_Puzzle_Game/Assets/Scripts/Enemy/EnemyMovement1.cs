@@ -24,6 +24,9 @@ public class EnemyMovement1 : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform; // Player를 찾아서 Transform 저장
         nextFireTime = Time.time; // 다음 발사 시간 초기화
         _animator = GetComponent<Animator>();
+        
+        // Test 해보기
+        SoundManager.instance.PlaySound("Slime1_Move");
     }
 
     void FixedUpdate()
