@@ -13,11 +13,6 @@ public class MainScene : MonoBehaviour
     public GameObject _selectionStage2;
     public GameObject _selectionStage3;
 
-    public GameObject monsterCollection;
-    
-    public GameObject monster1;
-    public GameObject monster2;
-
     private IEnumerator TransitionToNextStage()
     {
         // 페이드 아웃 효과
@@ -147,23 +142,5 @@ public class MainScene : MonoBehaviour
         _soundCanvas.gameObject.SetActive(true);
         mainScene.gameObject.SetActive(false);
         SoundManager.instance.PlaySound("ButtonClick");
-    }
-
-    public void Collection()
-    {
-        mainScene.gameObject.SetActive(false);
-        monsterCollection.gameObject.SetActive(true);
-    }
-
-    public void monsterInfo1()
-    {
-        monsterCollection.gameObject.SetActive(false);
-        monster1.gameObject.SetActive(true);
-    }
-    
-    public void monsterInfo2()
-    {
-        monsterCollection.gameObject.SetActive(false);
-        monster2.gameObject.SetActive(true);
     }
 }

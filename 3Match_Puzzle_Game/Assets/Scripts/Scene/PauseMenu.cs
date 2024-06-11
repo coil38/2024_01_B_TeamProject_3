@@ -74,6 +74,54 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
         SceneManager.LoadScene("Stage3");
     }
+    
+    public void LoadGame4()
+    {
+        SoundManager.instance.PlaySound("ButtonClick");
+        Time.timeScale = 1;
+        GameIsPaused = false;
+        SceneManager.LoadScene("Stage4");
+    }
+    
+    public void LoadGame5()
+    {
+        SoundManager.instance.PlaySound("ButtonClick");
+        Time.timeScale = 1;
+        GameIsPaused = false;
+        SceneManager.LoadScene("Stage5");
+    }
+    
+    public void LoadGame6()
+    {
+        SoundManager.instance.PlaySound("ButtonClick");
+        Time.timeScale = 1;
+        GameIsPaused = false;
+        SceneManager.LoadScene("Stage6");
+    }
+    
+    public void LoadGame7()
+    {
+        SoundManager.instance.PlaySound("ButtonClick");
+        Time.timeScale = 1;
+        GameIsPaused = false;
+        SceneManager.LoadScene("Stage7");
+    }
+    
+    public void LoadGame8()
+    {
+        SoundManager.instance.PlaySound("ButtonClick");
+        Time.timeScale = 1;
+        GameIsPaused = false;
+        SceneManager.LoadScene("Stage8");
+    }
+    
+    public void LoadGame9()
+    {
+        SoundManager.instance.PlaySound("ButtonClick");
+        Time.timeScale = 1;
+        GameIsPaused = false;
+        SceneManager.LoadScene("Stage9");
+    }
 
     public void GoToSettings()
     {
