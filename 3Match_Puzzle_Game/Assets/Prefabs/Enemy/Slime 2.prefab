@@ -772,7 +772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af013ad55ebb64a7cbcd10517b384663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allowedAttackTypes: 01000000
+  allowedAttackTypes: 000000000200000003000000
   maxHealth: 5
   healthBar: {fileID: 5146928524738353350}
 --- !u!114 &3266546766542412994
