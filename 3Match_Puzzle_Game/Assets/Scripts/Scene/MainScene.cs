@@ -32,6 +32,11 @@ public class MainScene : MonoBehaviour
             yield return StartCoroutine(fadeEffect.Fade(1f, 0f)); // 페이드 인 (시간은 0.5초로 설정)
         }
     }
+
+    public void EndingStoryScene()
+    {
+        SceneManager.LoadScene("EndingStory");
+    }
     
     public void MainStoryScene()
     {

@@ -37,16 +37,7 @@ public class MonsterSpawner : MonoBehaviour
     {
         areMonstersAlive = alive;
     }
-    
-    public void EnemyKilled()
-    {
-        GameObject[] monsters = GameObject.FindGameObjectsWithTag("Enemy");
-        if (monsters.Length == 0)
-        {
-            SetMonstersAlive(false);
-        }
-    }
-    
+
     void LoadNextStage()
     {
         StartCoroutine(TransitionToNextStage());
@@ -67,7 +58,12 @@ public class MonsterSpawner : MonoBehaviour
         // 현재 스테이지의 번호를 추출
         int currentStageNumber = int.Parse(currentSceneName.Substring("Stage".Length));
 
-        if (currentStageNumber < maxStages)
+        // 스토리 씬 로드 조건 추가
+        if (currentStageNumber == 3 || currentStageNumber == 6)
+        {
+            LoadStoryScene(currentStageNumber);
+        }
+        else if (currentStageNumber < maxStages)
         {
             // 다음 스테이지로 이동
             int nextStageNumber = currentStageNumber + 1;
@@ -91,5 +87,12 @@ public class MonsterSpawner : MonoBehaviour
         {
             yield return StartCoroutine(fadeEffect.Fade(1f, 0f)); // 페이드 인 (시간은 0.5초로 설정)
         }
+    }
+    
+    void LoadStoryScene(int currentStageNumber)
+    {
+        // 스토리 씬 이름을 구성
+        string storySceneName = "Story" + currentStageNumber;
+        SceneManager.LoadScene(storySceneName);
     }
 }

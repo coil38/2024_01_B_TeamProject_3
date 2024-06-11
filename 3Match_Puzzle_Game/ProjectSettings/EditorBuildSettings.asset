@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: d8fe9158edb425844bf9639abe32b6f1
   - enabled: 1
     path: Assets/Scenes/DialogSystem/MainStoryScene.unity
-    guid: a314c418c896b654982158e7cc971783
+    guid: 3a41ba1e8ae4be2498ddda5114743009
   - enabled: 1
     path: Assets/Scenes/GameScene/Stage 1/Stage1.unity
     guid: 70dfd48371f5a474eb776a2700ee8d7a
@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene/Stage 1/Stage3.unity
     guid: 6a3f3eb9c446a754aa48710d1ad2535c
   - enabled: 1
+    path: Assets/Scenes/DialogSystem/Story3.unity
+    guid: f2cf5543ccf0ca1489377e8a372c22e4
+  - enabled: 1
     path: Assets/Scenes/GameScene/Stage 2/Stage4.unity
     guid: 1599b0fa8b777a344aad76c26c10b9c0
   - enabled: 1
@@ -36,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene/Stage 2/Stage6.unity
     guid: ec1570e00455cb44992e66a761be1f8e
   - enabled: 1
+    path: Assets/Scenes/DialogSystem/Story6.unity
+    guid: 137665365ab404342a3bd64f8311ff7e
+  - enabled: 1
     path: Assets/Scenes/GameScene/Stage 3/Stage7.unity
     guid: 82070d3aac77c7640807095066a6fa70
   - enabled: 1
@@ -44,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene/Stage 3/Stage9.unity
     guid: 4cdbf511f397cdd42945661dd54d9895
+  - enabled: 1
+    path: Assets/Scenes/DialogSystem/EndingStory.unity
+    guid: 40b9fe9aa2dc4114a8ba7fac9d9ad0b7
   m_configObjects: {}
