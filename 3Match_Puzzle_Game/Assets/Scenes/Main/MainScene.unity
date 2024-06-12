@@ -768,7 +768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.7019608}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2209,9 +2209,6 @@ MonoBehaviour:
   _selectionStage1: {fileID: 1088463448}
   _selectionStage2: {fileID: 1765073141}
   _selectionStage3: {fileID: 100873548}
-  monsterCollection: {fileID: 0}
-  monster1: {fileID: 0}
-  monster2: {fileID: 0}
 --- !u!4 &1053655385
 Transform:
   m_ObjectHideFlags: 0
