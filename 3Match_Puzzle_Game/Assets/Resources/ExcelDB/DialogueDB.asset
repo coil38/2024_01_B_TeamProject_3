@@ -274,4 +274,4 @@ MonoBehaviour:
       tweenType: 0
       nextindex: 24
       selectIndex: -100
-      nextScene: None
+      nextScene: MainScene
