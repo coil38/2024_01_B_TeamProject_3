@@ -260,7 +260,7 @@ MonoBehaviour:
       dialogue: "[\uBCF4\uC11D\uC744 \uC5BB\uC5C8\uB2E4]  \uBCF4\uC11D \uC774\uBBF8\uC9C0
         \uB123\uAE30 ->"
       characterPath: Character/00001
-      BackGroundPath: None
+      BackGroundPath: "BackGround/\uBC30\uACBD3"
       tweenType: 0
       nextindex: 23
       selectIndex: -100
@@ -273,5 +273,35 @@ MonoBehaviour:
       BackGroundPath: None
       tweenType: 0
       nextindex: 24
+      selectIndex: -100
+      nextScene: None
+    - index: 24
+      speakerUIindex: 0
+      name: "\uC774\uB984_021"
+      dialogue: "(\uB300\uC0AC\uB4E4)"
+      characterPath: Character/01
+      BackGroundPath: None
+      tweenType: 0
+      nextindex: 25
+      selectIndex: -100
+      nextScene: None
+    - index: 25
+      speakerUIindex: 0
+      name: "\uC774\uB984_021"
+      dialogue: "(\uB300\uC0AC\uB4E4)"
+      characterPath: Character/01
+      BackGroundPath: None
+      tweenType: 0
+      nextindex: 26
+      selectIndex: -100
+      nextScene: None
+    - index: 26
+      speakerUIindex: 0
+      name: "\uC774\uB984_021"
+      dialogue: "(\uB300\uC0AC\uB4E4)"
+      characterPath: Character/01
+      BackGroundPath: None
+      tweenType: 0
+      nextindex: 27
       selectIndex: -100
       nextScene: MainScene
