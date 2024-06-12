@@ -1871,7 +1871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: BackGround
-    clip: {fileID: 8300000, guid: 90eae78e8ce85a849b5b0ca11b2de641, type: 3}
+    clip: {fileID: 8300000, guid: c8f166449742c3e49b5de3b9cc082abb, type: 3}
     volume: 1
     pitch: 1
     loop: 1
@@ -1921,13 +1921,6 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Match
     clip: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
-    source: {fileID: 0}
-  - name: Slime1_Move
-    clip: {fileID: 8300000, guid: 1d320a75306d08c4b933ac9ac53006f9, type: 3}
     volume: 1
     pitch: 1
     loop: 0
