@@ -46,6 +46,7 @@ public class EnemyHealth : MonoBehaviour
         _animator.SetTrigger("doDead");
         enemyCollider.enabled = false;      
         StartCoroutine(DeadRoutine());
+        SoundManager.instance.PlaySound("EnemyDead");
     }
 
     private IEnumerator DeadRoutine()

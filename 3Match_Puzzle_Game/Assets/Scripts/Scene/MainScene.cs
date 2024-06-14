@@ -25,6 +25,9 @@ public class MainScene : MonoBehaviour
     
         // 씬 로드
         LoadingBarController.LoadScene("MainStoryScene");
+        
+        /*SoundManager.instance.PlaySound("StoryBGM");
+        SoundManager.instance.StopSound("BackGround");*/
     
         // 페이드 인 효과
         if (fadeEffect != null)

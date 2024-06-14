@@ -42,6 +42,8 @@ public class PlayerHealth : MonoBehaviour
         GameOverText.gameObject.SetActive(true);
         Time.timeScale = 0;
         _animator.SetTrigger("doDead");
-        Debug.Log("Player Died");
+        SoundManager.instance.PlaySound("PlayerDead");
+        SoundManager.instance.PlaySound("GameOver");
+        SoundManager.instance.StopSound("BackGround");
     }
 }

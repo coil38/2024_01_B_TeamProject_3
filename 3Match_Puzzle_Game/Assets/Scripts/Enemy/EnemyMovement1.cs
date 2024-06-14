@@ -17,6 +17,8 @@ public class EnemyMovement1 : MonoBehaviour
     private Rigidbody2D rb; // Rigidbody2D 컴포넌트에 접근하기 위한 변수
     private bool isMoving = true; // 이동 중인지 여부를 나타내는 변수
 
+    private bool isEnemyAttackSound;
+
 
     void Start()
     {
@@ -24,9 +26,7 @@ public class EnemyMovement1 : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform; // Player를 찾아서 Transform 저장
         nextFireTime = Time.time; // 다음 발사 시간 초기화
         _animator = GetComponent<Animator>();
-        
-        // Test 해보기
-        SoundManager.instance.PlaySound("Slime1_Move");
+        isEnemyAttackSound = false;
     }
 
     void FixedUpdate()
@@ -54,6 +54,8 @@ public class EnemyMovement1 : MonoBehaviour
             if (!isMoving && Time.time > nextFireTime)
             {
                 _animator.SetBool("isAttack", true);
+                SoundManager.instance.PlaySound("EnemyAttack");
+                isEnemyAttackSound = true;
                 // Bullet 발사
                 GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
                 // Bullet을 Player를 향해 발사
@@ -64,3 +66,5 @@ public class EnemyMovement1 : MonoBehaviour
         }
     }
 }
+
+

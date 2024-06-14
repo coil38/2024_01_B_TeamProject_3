@@ -51,7 +51,7 @@ public class MonsterSpawner : MonoBehaviour
         {
             yield return StartCoroutine(fadeEffect.Fade(0f, 1f)); // 페이드 아웃
         }
-
+        
         // 현재 씬의 이름을 가져옴
         string currentSceneName = SceneManager.GetActiveScene().name;
 

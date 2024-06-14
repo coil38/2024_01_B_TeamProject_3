@@ -9,6 +9,7 @@ public class GameOver : MonoBehaviour
 
     float timerLeft;
     Image timerBar;
+    bool gameOverSoundPlayed;
     
     void Start()
     {
@@ -16,6 +17,7 @@ public class GameOver : MonoBehaviour
         DamageEffectImage.SetActive(false);
         timerBar = GetComponent<Image>();
         timerLeft = maxTime;
+        gameOverSoundPlayed = false;
     }
 
     void Update()
@@ -32,9 +34,15 @@ public class GameOver : MonoBehaviour
         }
         else
         {
-            GameOverText.SetActive(true);
-            
-            DamageEffectImage.SetActive(false);
+            if (!gameOverSoundPlayed)
+            {
+                GameOverText.SetActive(true);
+                DamageEffectImage.SetActive(false);
+                SoundManager.instance.PlaySound("GameOver");
+                SoundManager.instance.StopSound("BackGround");
+                gameOverSoundPlayed = true;
+                Time.timeScale = 0;
+            }
         }
     }
 }

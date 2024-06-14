@@ -1878,53 +1878,95 @@ MonoBehaviour:
     mixerGroup: {fileID: -4186542774813161279, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
     source: {fileID: 0}
   - name: ButtonClick
-    clip: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}
+    clip: {fileID: 8300000, guid: e1e7f53973f43a74e9215b632ba195ac, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
     source: {fileID: 0}
   - name: Healing
-    clip: {fileID: 8300000, guid: c48a972d3d024c2408a3331750786a29, type: 3}
+    clip: {fileID: 8300000, guid: 143e0107ae1a24547a912276e3eb7723, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
     source: {fileID: 0}
   - name: Crossbow
-    clip: {fileID: 8300000, guid: d9419ba0bfac1e84a95418ac5851caf6, type: 3}
+    clip: {fileID: 8300000, guid: f06d8c865924ef84799b8fc9e7785750, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
     source: {fileID: 0}
   - name: Melee
-    clip: {fileID: 8300000, guid: a58e438b7cfa445498120af0e6169082, type: 3}
+    clip: {fileID: 8300000, guid: 8384c9edcaf92df4d85c64a88a788bbe, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
     source: {fileID: 0}
   - name: Magical
-    clip: {fileID: 8300000, guid: 5e1a9f876d3dafd47bc6b3dde25135fa, type: 3}
+    clip: {fileID: 8300000, guid: a98b6ef8d1b082b4794580b1d0e95976, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
     source: {fileID: 0}
   - name: Spear
-    clip: {fileID: 8300000, guid: ab297b593498a6e47ba84de770477cbe, type: 3}
+    clip: {fileID: 8300000, guid: 8384c9edcaf92df4d85c64a88a788bbe, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
     source: {fileID: 0}
   - name: Match
-    clip: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
+    clip: {fileID: 8300000, guid: 88b81ec44c115ac4aa4b08d308fd31ad, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
+    source: {fileID: 0}
+  - name: GameOver
+    clip: {fileID: 8300000, guid: e99343f5cde291c438ba0df944e022d0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
+    source: {fileID: 0}
+  - name: GameClear
+    clip: {fileID: 8300000, guid: 88b81ec44c115ac4aa4b08d308fd31ad, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
+    source: {fileID: 0}
+  - name: EnemyAttack
+    clip: {fileID: 8300000, guid: 9696ace27d65f9d4dbd3f20d61495a22, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
+    source: {fileID: 0}
+  - name: EnemyDead
+    clip: {fileID: 8300000, guid: 4dce24173616f074bbaea6f00e40e867, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
+    source: {fileID: 0}
+  - name: PlayerDead
+    clip: {fileID: 8300000, guid: 4dce24173616f074bbaea6f00e40e867, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
+    source: {fileID: 0}
+  - name: StoryBGM
+    clip: {fileID: 8300000, guid: 6d3e1ef87e91cf141b5e679b30b980f6, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    mixerGroup: {fileID: -4186542774813161279, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
     source: {fileID: 0}
   audioMixer: {fileID: 24100000, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
 --- !u!4 &900619785
