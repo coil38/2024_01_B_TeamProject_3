@@ -26,12 +26,12 @@ MonoBehaviour:
       selectIndex: -100
       nextScene: None
     - index: 1
-      speakerUIindex: 0
+      speakerUIindex: 1
       name: "\uAE30\uC0AC"
       dialogue: "(\u2026\uC600\uC9C0\uB9CC \uB108\uBB34 \uAC8C\uC73C\uB974\uAC8C
         \uC0B0 \uB098\uBA38\uC9C0 \uC655\uAD6D\uC5D0\uC11C \uCAD3\uACA8\uB098\uACE0
         \uB9D0\uC558\uB2E4.)"
-      characterPath: Character/01
+      characterPath: "Character/Dialog/\uC655 \uAE30\uBCF8\uD45C\uC815"
       BackGroundPath: None
       tweenType: 0
       nextindex: 2
