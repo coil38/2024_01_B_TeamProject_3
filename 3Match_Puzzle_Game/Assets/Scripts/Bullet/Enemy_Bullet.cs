@@ -7,7 +7,7 @@ public class Enemy_Bullet : MonoBehaviour
     public float speed = 8f; //탄알 이동 속력
     public int damage = 20; // 탄알이 적에게 줄 데미지
     private Rigidbody2D rigid; //이동에 사용할 리지드바디 컴포넌트
-    // Start is called before the first frame update
+
     void Start()
     {
         // 이동에 사용할 리지드바디 컴포넌트 가져오기

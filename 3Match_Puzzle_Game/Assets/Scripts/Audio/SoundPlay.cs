@@ -35,6 +35,7 @@ public class SoundPlay : MonoBehaviour
             SoundManager.instance.StopSound("Stage1");
             SoundManager.instance.StopSound("Stage2");
             SoundManager.instance.StopSound("Stage3");
+            SoundManager.instance.StopSound("StoryBGM");
             return;
         }
 
