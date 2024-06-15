@@ -1934,7 +1934,7 @@ MonoBehaviour:
     mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
     source: {fileID: 0}
   - name: GameClear
-    clip: {fileID: 8300000, guid: 88b81ec44c115ac4aa4b08d308fd31ad, type: 3}
+    clip: {fileID: 8300000, guid: 7c27df62d86372248b0a54c7cd279c17, type: 3}
     volume: 1
     pitch: 1
     loop: 0
@@ -1962,6 +1962,27 @@ MonoBehaviour:
     mixerGroup: {fileID: -361111565405038521, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
     source: {fileID: 0}
   - name: StoryBGM
+    clip: {fileID: 8300000, guid: 6d3e1ef87e91cf141b5e679b30b980f6, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    mixerGroup: {fileID: -4186542774813161279, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
+    source: {fileID: 0}
+  - name: Stage1
+    clip: {fileID: 8300000, guid: 2ed625360e52a174ea62ffe78e37dbf8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    mixerGroup: {fileID: -4186542774813161279, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
+    source: {fileID: 0}
+  - name: Stage2
+    clip: {fileID: 8300000, guid: c26d96a41dcad874a80495142295e131, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    mixerGroup: {fileID: -4186542774813161279, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
+    source: {fileID: 0}
+  - name: Stage3
     clip: {fileID: 8300000, guid: 6d3e1ef87e91cf141b5e679b30b980f6, type: 3}
     volume: 1
     pitch: 1
