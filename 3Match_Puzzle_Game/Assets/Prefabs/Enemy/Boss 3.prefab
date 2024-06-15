@@ -714,7 +714,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.5
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -789,7 +789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 5732731001967146796, guid: c7c4aa98f15a04c7a985d303d513c62f, type: 3}
   bulletPrefab: {fileID: 3928302621148496416, guid: f31813b1211e4864dbe46bc79fe0004a, type: 3}
-  moveSpeed: 0.05
-  minDistance: 2
+  moveSpeed: 0.5
+  minDistance: 7
   maxDistance: 10
   fireRate: 2
