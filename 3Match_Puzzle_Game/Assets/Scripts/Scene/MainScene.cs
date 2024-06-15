@@ -15,24 +15,21 @@ public class MainScene : MonoBehaviour
 
     private IEnumerator TransitionToNextStage()
     {
-        // ÆäÀÌµå ¾Æ¿ô È¿°ú
+        // ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Æ¿ï¿½ È¿ï¿½ï¿½
         FadeEffect fadeEffect = FindObjectOfType<FadeEffect>();
     
         if (fadeEffect != null)
         {
-            yield return StartCoroutine(fadeEffect.Fade(0f, 1f)); // ÆäÀÌµå ¾Æ¿ô
+            yield return StartCoroutine(fadeEffect.Fade(0f, 1f)); // ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Æ¿ï¿½
         }
     
-        // ¾À ·Îµå
+        // ï¿½ï¿½ ï¿½Îµï¿½
         LoadingBarController.LoadScene("MainStoryScene");
         
-        /*SoundManager.instance.PlaySound("StoryBGM");
-        SoundManager.instance.StopSound("BackGround");*/
-    
-        // ÆäÀÌµå ÀÎ È¿°ú
+        // ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ È¿ï¿½ï¿½
         if (fadeEffect != null)
         {
-            yield return StartCoroutine(fadeEffect.Fade(1f, 0f)); // ÆäÀÌµå ÀÎ (½Ã°£Àº 0.5ÃÊ·Î ¼³Á¤)
+            yield return StartCoroutine(fadeEffect.Fade(1f, 0f)); // ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ (ï¿½Ã°ï¿½ï¿½ï¿½ 0.5ï¿½Ê·ï¿½ ï¿½ï¿½ï¿½ï¿½)
         }
     }
 

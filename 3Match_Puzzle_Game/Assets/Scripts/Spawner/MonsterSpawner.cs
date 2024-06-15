@@ -58,11 +58,6 @@ public class MonsterSpawner : MonoBehaviour
         // 현재 스테이지의 번호를 추출
         int currentStageNumber = int.Parse(currentSceneName.Substring("Stage".Length));
 
-        
-        
-        // 배경 음악 중지
-        SoundManager.instance.StopSound("BackGround");
-        
         // 스토리 씬 로드 조건 추가
         if (currentStageNumber == 3 || currentStageNumber == 6)
         {
@@ -85,6 +80,9 @@ public class MonsterSpawner : MonoBehaviour
             Time.timeScale = 0;
             
             gameClear.SetActive(true);
+            
+            SoundManager.instance.PlaySound("GameClear");
+            SoundManager.instance.StopSound("Stage3");
         }
 
         // 페이드 인 효과

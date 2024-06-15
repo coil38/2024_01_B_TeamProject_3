@@ -1871,7 +1871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: BackGround
-    clip: {fileID: 8300000, guid: c8f166449742c3e49b5de3b9cc082abb, type: 3}
+    clip: {fileID: 8300000, guid: 9385367031d4e094d8fdd0538a5afa8b, type: 3}
     volume: 1
     pitch: 1
     loop: 1
@@ -1983,7 +1983,7 @@ MonoBehaviour:
     mixerGroup: {fileID: -4186542774813161279, guid: 9b3cb85f483a48649ac99db9a4d33b7c, type: 2}
     source: {fileID: 0}
   - name: Stage3
-    clip: {fileID: 8300000, guid: 6d3e1ef87e91cf141b5e679b30b980f6, type: 3}
+    clip: {fileID: 8300000, guid: 545bdb7772e0a0745a86a9d458b933dd, type: 3}
     volume: 1
     pitch: 1
     loop: 1

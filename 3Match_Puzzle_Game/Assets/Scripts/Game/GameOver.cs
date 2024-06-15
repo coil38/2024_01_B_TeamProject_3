@@ -40,6 +40,9 @@ public class GameOver : MonoBehaviour
                 DamageEffectImage.SetActive(false);
                 SoundManager.instance.PlaySound("GameOver");
                 SoundManager.instance.StopSound("BackGround");
+                SoundManager.instance.StopSound("Stage1");
+                SoundManager.instance.StopSound("Stage2");
+                SoundManager.instance.StopSound("Stage3");
                 gameOverSoundPlayed = true;
                 Time.timeScale = 0;
             }

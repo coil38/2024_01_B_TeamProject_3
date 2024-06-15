@@ -57,7 +57,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         GameIsPaused = false;
         SceneManager.LoadScene("Stage1");
-        SoundManager.instance.PlaySound("BackGround");
     }
 
     public void LoadGame2()
@@ -66,7 +65,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         GameIsPaused = false;
         SceneManager.LoadScene("Stage2");
-        SoundManager.instance.PlaySound("BackGround");
     }
 
     public void LoadGame3()
@@ -75,7 +73,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         GameIsPaused = false;
         SceneManager.LoadScene("Stage3");
-        SoundManager.instance.PlaySound("BackGround");
     }
     
     public void LoadGame4()
@@ -84,7 +81,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         GameIsPaused = false;
         SceneManager.LoadScene("Stage4");
-        SoundManager.instance.PlaySound("BackGround");
     }
     
     public void LoadGame5()
@@ -93,7 +89,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         GameIsPaused = false;
         SceneManager.LoadScene("Stage5");
-        SoundManager.instance.PlaySound("BackGround");
     }
     
     public void LoadGame6()
@@ -102,7 +97,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         GameIsPaused = false;
         SceneManager.LoadScene("Stage6");
-        SoundManager.instance.PlaySound("BackGround");
     }
     
     public void LoadGame7()
@@ -111,7 +105,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         GameIsPaused = false;
         SceneManager.LoadScene("Stage7");
-        SoundManager.instance.PlaySound("BackGround");
     }
     
     public void LoadGame8()
@@ -120,7 +113,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         GameIsPaused = false;
         SceneManager.LoadScene("Stage8");
-        SoundManager.instance.PlaySound("BackGround");
     }
     
     public void LoadGame9()
@@ -129,7 +121,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         GameIsPaused = false;
         SceneManager.LoadScene("Stage9");
-        SoundManager.instance.PlaySound("BackGround");
     }
 
     public void GoToSettings()

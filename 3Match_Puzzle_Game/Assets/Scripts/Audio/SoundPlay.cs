@@ -43,7 +43,9 @@ public class SoundPlay : MonoBehaviour
         SoundManager.instance.StopSound("Stage1");
         SoundManager.instance.StopSound("Stage2");
         SoundManager.instance.StopSound("Stage3");
+        SoundManager.instance.StopSound("StoryBGM");
 
+        // 스테이지 사운드
         if (currentSceneName == "Stage1" || currentSceneName == "Stage2" || currentSceneName == "Stage3")
         {
             SoundManager.instance.PlaySound("Stage1");
@@ -55,6 +57,13 @@ public class SoundPlay : MonoBehaviour
         else if (currentSceneName == "Stage7" || currentSceneName == "Stage8" || currentSceneName == "Stage9")
         {
             SoundManager.instance.PlaySound("Stage3");
+        }
+
+        // 스토리 사운드
+        if (currentSceneName == "MainStoryScene" || currentSceneName == "Story3" || currentSceneName == "Story6" ||
+            currentSceneName == "EndingStory")
+        {
+            SoundManager.instance.PlaySound("StoryBGM");
         }
     }
 }
