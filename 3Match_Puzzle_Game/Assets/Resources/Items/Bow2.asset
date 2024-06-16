@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2a1693dbcf5e60488adce6a26701b2f, type: 3}
-  m_Name: Hippo
+  m_Name: Bow2
   m_EditorClassIdentifier: 
-  value: 10
-  sprite: {fileID: 21300000, guid: 86ee40ddc7fae2c4493c4bdc0f5f4cf7, type: 3}
+  value: 2
+  sprite: {fileID: 21300000, guid: 5052c3842e71cc54b82c74df2b43523c, type: 3}

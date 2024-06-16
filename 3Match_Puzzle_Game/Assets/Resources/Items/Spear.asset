@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2a1693dbcf5e60488adce6a26701b2f, type: 3}
-  m_Name: Parrot
+  m_Name: Spear
   m_EditorClassIdentifier: 
-  value: 15
-  sprite: {fileID: 21300000, guid: e91e1bbb5c020094491da013aa995194, type: 3}
+  value: 10
+  sprite: {fileID: 21300000, guid: 5fe751dfdf301f04fac9f8393a1fd10a, type: 3}

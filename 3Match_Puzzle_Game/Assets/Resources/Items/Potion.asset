@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2a1693dbcf5e60488adce6a26701b2f, type: 3}
-  m_Name: Monkey
+  m_Name: Potion
   m_EditorClassIdentifier: 
-  value: 3
-  sprite: {fileID: 21300000, guid: 6d6f41b7d15b1e74190f556982f0d1b3, type: 3}
+  value: 10
+  sprite: {fileID: 21300000, guid: 0ca0e7f1ac4a02c4492722dabd9f8049, type: 3}

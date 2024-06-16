@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2a1693dbcf5e60488adce6a26701b2f, type: 3}
-  m_Name: Giraffe
+  m_Name: Melee
   m_EditorClassIdentifier: 
-  value: 5
-  sprite: {fileID: 21300000, guid: f499a399e110ef54d9f9cf0d86a65a9f, type: 3}
+  value: 3
+  sprite: {fileID: 21300000, guid: 27d5b9e3a755b55478baa7323bc0469c, type: 3}
