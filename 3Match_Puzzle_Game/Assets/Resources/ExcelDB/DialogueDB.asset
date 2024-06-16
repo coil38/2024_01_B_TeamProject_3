@@ -126,7 +126,7 @@ MonoBehaviour:
       speakerUIindex: 1
       name: "\uBCF4\uC11D"
       dialogue: "[\uBCF4\uC11D\uC744 \uC5BB\uC5C8\uB2E4]"
-      characterPath: "Character/\uBCF4\uC2A41\uBCF4\uC11D"
+      characterPath: "Character/\uBCF4\uC2A41 \uBCF4\uC11D"
       BackGroundPath: "BackGround/\uBC30\uACBD1"
       tweenType: 0
       nextindex: 11
@@ -180,7 +180,7 @@ MonoBehaviour:
       speakerUIindex: 1
       name: "\uBCF4\uC11D"
       dialogue: "[\uBCF4\uC11D\uC744 \uC5BB\uC5C8\uB2E4]"
-      characterPath: "Character/\uBCF4\uC2A42\uBCF4\uC11D"
+      characterPath: "Character/\uBCF4\uC2A42 \uBCF4\uC11D"
       BackGroundPath: "BackGround/\uBC30\uACBD2"
       tweenType: 0
       nextindex: 16
@@ -256,7 +256,7 @@ MonoBehaviour:
       speakerUIindex: 1
       name: "\uBCF4\uC11D"
       dialogue: "[\uBCF4\uC11D\uC744 \uC5BB\uC5C8\uB2E4]"
-      characterPath: "Character/\uBCF4\uC2A43\uBCF4\uC11D"
+      characterPath: "Character/\uBCF4\uC2A43 \uBCF4\uC11D"
       BackGroundPath: "BackGround/\uBC30\uACBD3"
       tweenType: 0
       nextindex: 23
