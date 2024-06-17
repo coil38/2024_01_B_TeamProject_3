@@ -27,16 +27,15 @@ public class AudioMixerController : MonoBehaviour
 
     void Start()
     {
-        musicMasterSlider.value = PlayerPrefs.GetFloat("Master");
+        musicMasterSlider.value = PlayerPrefs.GetFloat("Master");       // 저장한 값을 가져온다
         musicBGMSlider.value = PlayerPrefs.GetFloat("BGM");
         musicSFXSlider.value = PlayerPrefs.GetFloat("SFX");
-
     }
 
     public void SetMasterVolume(float volume)                           // 마스터 볼륨 슬라이더가 Mixer에 반영되게
     {
         audioMixer.SetFloat("Master", Mathf.Log10(volume) * 20);        // 볼륨은 Log10 단위에 x20을 해준다.
-        PlayerPrefs.SetFloat("Master", volume);
+        PlayerPrefs.SetFloat("Master", volume);                         // 슬라이더값을 로컬 값에 저장한다.
     }
 
     public void SetBGMVolume(float volume)                              // BGM 볼륨 슬라이더가 Mixer에 반영되게

@@ -67,6 +67,7 @@ public class SoundManager : MonoBehaviour
         }
     }
     
+    // 사운드를 멈추는 메서드
     public void StopSound(string name)
     {
         Sound stopSoundToPlay = sounds.Find(sound => sound.name == name);
