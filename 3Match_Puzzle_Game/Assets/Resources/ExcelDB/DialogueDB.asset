@@ -20,7 +20,7 @@ MonoBehaviour:
       name: "\uAE30\uC0AC"
       dialogue: "(\uAE30\uC0AC\uAC00 \uC655\uAD81\uC5D0 \uB4E4\uC5B4\uC628\uB2E4.)"
       characterPath: "Character/Dialog/\uAE30\uC0AC \uAE30\uBCF8\uD45C\uC815"
-      BackGroundPath: "BackGround/\uBC30\uACBD1"
+      BackGroundPath: "BackGround/\uC655\uAD81 \uBC30\uACBD"
       tweenType: 0
       nextindex: 1
       selectIndex: -100
@@ -330,7 +330,7 @@ MonoBehaviour:
       selectIndex: -100
       nextScene: Stage7
     - index: 29
-      speakerUIindex: 1
+      speakerUIindex: 0
       name: "\uBCF4\uC11D"
       dialogue: "[\uBCF4\uC11D\uC744 \uC5BB\uC5C8\uB2E4]"
       characterPath: "Character/\uBCF4\uC2A43 \uBCF4\uC11D"
@@ -341,9 +341,9 @@ MonoBehaviour:
       nextScene: None
     - index: 30
       speakerUIindex: 0
-      name: "\uAE30\uC0AC"
-      dialogue: "(\uB0B4\uAC00 \uD574\uB0C8\uB2E4!)"
-      characterPath: "Character/Dialog/\uAE30\uC0AC \uAE30\uBCF8\uD45C\uC815"
+      name: 
+      dialogue: 
+      characterPath: None
       BackGroundPath: None
       tweenType: 0
       nextindex: 31
@@ -352,7 +352,7 @@ MonoBehaviour:
     - index: 31
       speakerUIindex: 0
       name: "\uAE30\uC0AC"
-      dialogue: "(\uB300\uC0AC\uB4E4)"
+      dialogue: "(\uB0B4\uAC00 \uD574\uB0C8\uB2E4!)"
       characterPath: "Character/Dialog/\uAE30\uC0AC \uAE30\uBCF8\uD45C\uC815"
       BackGroundPath: None
       tweenType: 0
@@ -361,21 +361,129 @@ MonoBehaviour:
       nextScene: None
     - index: 32
       speakerUIindex: 0
-      name: "\uAE30\uC0AC"
-      dialogue: "(\uB300\uC0AC\uB4E4)"
+      name: 
+      dialogue: "(\uC655\uAD81\uC5D0\uC11C\uB294 \uAE30\uC0AC\uAC00 \uB358\uC804\uC5D0
+        \uBCF4\uC2A4\uB97C \uC4F0\uB824\uB728\uB838\uB2E4\uB294 \uC774\uC57C\uAE30\uAC00
+        \uD37C\uC9C4\uB2E4)"
       characterPath: "Character/Dialog/\uAE30\uC0AC \uAE30\uBCF8\uD45C\uC815"
-      BackGroundPath: None
+      BackGroundPath: "BackGround/\uC655\uAD81 \uBC30\uACBD"
       tweenType: 0
       nextindex: 33
       selectIndex: -100
       nextScene: None
     - index: 33
       speakerUIindex: 0
-      name: "\uAE30\uC0AC"
-      dialogue: "(\uB300\uC0AC\uB4E4)"
-      characterPath: "Character/Dialog/\uAE30\uC0AC \uAE30\uBCF8\uD45C\uC815"
+      name: "\uC655"
+      dialogue: "\uADF8 \uAC8C\uC73C\uB978 \uAE30\uC0AC\uAC00 \uBCF4\uC2A4\uB97C
+        \uC7A1\uC558\uB2E4\uACE0?"
+      characterPath: "Character/Dialog/\uC655 \uB180\uB78C"
       BackGroundPath: None
       tweenType: 0
       nextindex: 34
+      selectIndex: -100
+      nextScene: None
+    - index: 34
+      speakerUIindex: 0
+      name: "\uC655"
+      dialogue: "\uC5EC\uBD10\uB77C \uB2F9\uC7A5 \uAE30\uC0AC\uB97C \uB370\uB824\uC640\uB77C!"
+      characterPath: "Character/Dialog/\uC655 \uB180\uB78C"
+      BackGroundPath: None
+      tweenType: 0
+      nextindex: 35
+      selectIndex: -100
+      nextScene: None
+    - index: 35
+      speakerUIindex: 0
+      name: 
+      dialogue: "(\uAE30\uC0AC\uAC00\uC634)"
+      characterPath: None
+      BackGroundPath: None
+      tweenType: 0
+      nextindex: 36
+      selectIndex: -100
+      nextScene: None
+    - index: 36
+      speakerUIindex: 0
+      name: "\uC655\uBE44"
+      dialogue: "\uB2F9\uC2E0\uC774 \uBCF4\uC2A4\uB4E4\uC744 \uC7A1\uC558\uB2E4\uB294\uAC83\uC774
+        \uC0AC\uC2E4\uC778\uAC00\uC694?"
+      characterPath: "Character/Dialog/\uC655\uBE44 \uB180\uB78C"
+      BackGroundPath: None
+      tweenType: 0
+      nextindex: 37
+      selectIndex: -100
+      nextScene: None
+    - index: 37
+      speakerUIindex: 1
+      name: "\uAE30\uC0AC"
+      dialogue: "\uB124! \uC81C\uAC00 \uBCF4\uC2A4\uB4E4\uC744 \uC7A1\uC558\uC2B5\uB2C8\uB2E4.
+        \uC774\uAC78 \uBD10\uC8FC\uC2DC\uC8E0!"
+      characterPath: "Character/Dialog/\uAE30\uC0AC \uC6C3\uC74C"
+      BackGroundPath: None
+      tweenType: 0
+      nextindex: 38
+      selectIndex: -100
+      nextScene: None
+    - index: 38
+      speakerUIindex: 0
+      name: 
+      dialogue: "(\uBCF4\uC11D 3\uAC1C\uB97C \uBCF4\uC5EC\uC900\uB2E4)"
+      characterPath: "Character/\uBCF4\uC2A43 \uBCF4\uC11D"
+      BackGroundPath: None
+      tweenType: 0
+      nextindex: 39
+      selectIndex: -100
+      nextScene: None
+    - index: 39
+      speakerUIindex: 1
+      name: "\uC655"
+      dialogue: "\uC18C\uBB38\uC774 \uC9C4\uC9DC\uC600\uAD70!"
+      characterPath: "Character/Dialog/\uC655 \uB180\uB78C"
+      BackGroundPath: None
+      tweenType: 0
+      nextindex: 40
+      selectIndex: -100
+      nextScene: None
+    - index: 40
+      speakerUIindex: 1
+      name: "\uC655"
+      dialogue: "\uC655\uAD81\uC5D0 \uC704\uD611\uC774 \uB418\uB358 \uBCF4\uC2A4\uB4E4\uC744
+        \uC7A1\uB2E4\uB2C8! \uB10C \uC6B0\uB9AC\uC758 \uC601\uC6C5\uAE30\uC0AC\uC57C!"
+      characterPath: "Character/Dialog/\uC655 \uB180\uB78C"
+      BackGroundPath: None
+      tweenType: 0
+      nextindex: 41
+      selectIndex: -100
+      nextScene: None
+    - index: 41
+      speakerUIindex: 1
+      name: "\uC655\uBE44"
+      dialogue: "\uD3D0\uD558\uC758 \uB73B\uC785\uB2C8\uB2E4. \uC55E\uC73C\uB85C\uB3C4
+        \uC5F4\uC2EC\uD788 \uAE30\uC0AC\uC77C\uC744 \uD574\uC8FC\uC2DC\uAE38 \uBC14\uB798\uC694."
+      characterPath: "Character/Dialog/\uC655\uBE44 \uAE30\uBCF8\uD45C\uC815"
+      BackGroundPath: None
+      tweenType: 0
+      nextindex: 42
+      selectIndex: -100
+      nextScene: None
+    - index: 42
+      speakerUIindex: 0
+      name: "\uAE30\uC0AC"
+      dialogue: "\uB124! \uD3D0\uD558\uC758 \uBA85\uC744 \uB530\uB985\uB2C8\uB2E4."
+      characterPath: "Character/Dialog/\uAE30\uC0AC \uC6C3\uC74C"
+      BackGroundPath: None
+      tweenType: 0
+      nextindex: 43
+      selectIndex: -100
+      nextScene: None
+    - index: 43
+      speakerUIindex: 0
+      name: "\uAE30\uC0AC"
+      dialogue: "(\uAE30\uC0AC\uB294 \uB2E4\uC2DC \uC655\uAD81\uC5D0 \uC704\uB300\uD55C
+        \uAE30\uC0AC\uAC00 \uB418\uC5C8\uC2B5\uB2C8\uB2E4!)"
+      characterPath: "Character/Dialog/\uAE30\uC0AC \uC6C3\uC74C"
+      BackGroundPath: None
+      tweenType: 0
+      nextindex: 44
       selectIndex: -100
       nextScene: MainScene
