@@ -28,10 +28,8 @@ public class Attack : MonoBehaviour
 
     void Awake()
     {
-        // BulletSpawner의 인스턴스를 가져옴
         bulletSpawner = FindObjectOfType<BulletSpawner>();
         
-        // PlayerHealth 인스턴스를 가져옴
         playerHealth = FindObjectOfType<PlayerHealth>();
     }
 

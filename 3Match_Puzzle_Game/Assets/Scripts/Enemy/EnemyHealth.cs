@@ -14,12 +14,16 @@ public class EnemyHealth : MonoBehaviour
     private Animator _animator;
     private Collider2D enemyCollider;
 
+    public EnemyMovement1 enemyMovement1;
+
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         _animator = GetComponent<Animator>();
         enemyCollider = GetComponent<Collider2D>();
+
+        enemyMovement1 = FindAnyObjectByType<EnemyMovement1>();
     }
 
     public void TakeDamage(int damage, Player_Bullet.BulletType bulletType)
@@ -43,14 +47,16 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
+        enemyMovement1.StopMovement(); // 적의 움직임을 멈춤
         _animator.SetTrigger("doDead");
-        enemyCollider.enabled = false;      
+        enemyCollider.enabled = false;
         StartCoroutine(DeadRoutine());
         SoundManager.instance.PlaySound("EnemyDead");
     }
 
     private IEnumerator DeadRoutine()
     {
+        // 죽는 애니메이션이 완료될 때까지 대기
         yield return new WaitForSeconds(_animator.GetCurrentAnimatorStateInfo(0).length);
         gameObject.SetActive(false);
         GameManager.Instance.EnemyKilled();

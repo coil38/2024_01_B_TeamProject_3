@@ -11,14 +11,13 @@ public class EnemyMovement1 : MonoBehaviour
     public float maxDistance = 10f; // Player와의 최대 거리
     public float fireRate = 2f; // Bullet 발사 주기
     private float nextFireTime; // 다음 발사 시간
-    
+
     private Animator _animator;
 
     private Rigidbody2D rb; // Rigidbody2D 컴포넌트에 접근하기 위한 변수
-    private bool isMoving = true; // 이동 중인지 여부를 나타내는 변수
+    public bool isMoving = true; // 이동 중인지 여부를 나타내는 변수
 
     private bool isEnemyAttackSound;
-
 
     void Start()
     {
@@ -31,7 +30,7 @@ public class EnemyMovement1 : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (player != null)
+        if (player != null && isMoving) // 적이 움직일 수 있는 상태일 때만 움직임 처리
         {
             // 적과 Player 사이의 거리를 계산
             float distanceToPlayer = Vector2.Distance(transform.position, player.position);
@@ -65,6 +64,12 @@ public class EnemyMovement1 : MonoBehaviour
             }
         }
     }
+
+    // 적을 완전히 멈추는 메서드
+    public void StopMovement()
+    {
+        isMoving = false;
+        rb.velocity = Vector2.zero;
+        rb.isKinematic = true;
+    }
 }
-
-
