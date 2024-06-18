@@ -14,16 +14,12 @@ public class EnemyHealth : MonoBehaviour
     private Animator _animator;
     private Collider2D enemyCollider;
 
-    private EnemyMovement1 enemyMovement1;
-
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         _animator = GetComponent<Animator>();
         enemyCollider = GetComponent<Collider2D>();
-
-        enemyMovement1 = GetComponent<EnemyMovement1>();
     }
 
     public void TakeDamage(int damage, Player_Bullet.BulletType bulletType)
@@ -47,7 +43,6 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
-        enemyMovement1.StopMovement(); // ¿˚¿« øÚ¡˜¿”¿ª ∏ÿ√„
         _animator.SetTrigger("doDead");
         enemyCollider.enabled = false;
         StartCoroutine(DeadRoutine());

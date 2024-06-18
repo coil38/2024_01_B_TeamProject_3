@@ -30,7 +30,7 @@ public class EnemyMovement1 : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (player != null && isMoving) // 적이 움직일 수 있는 상태일 때만 움직임 처리
+        if (player != null) // 적이 움직일 수 있는 상태일 때만 움직임 처리
         {
             // 적과 Player 사이의 거리를 계산
             float distanceToPlayer = Vector2.Distance(transform.position, player.position);
@@ -63,13 +63,5 @@ public class EnemyMovement1 : MonoBehaviour
                 nextFireTime = Time.time + fireRate;
             }
         }
-    }
-
-    // 적을 완전히 멈추는 메서드
-    public void StopMovement()
-    {
-        isMoving = false;
-        rb.velocity = Vector2.zero;
-        rb.isKinematic = true;
     }
 }
