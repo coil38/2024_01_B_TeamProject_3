@@ -14,7 +14,7 @@ public class EnemyHealth : MonoBehaviour
     private Animator _animator;
     private Collider2D enemyCollider;
 
-    public EnemyMovement1 enemyMovement1;
+    private EnemyMovement1 enemyMovement1;
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class EnemyHealth : MonoBehaviour
         _animator = GetComponent<Animator>();
         enemyCollider = GetComponent<Collider2D>();
 
-        enemyMovement1 = FindAnyObjectByType<EnemyMovement1>();
+        enemyMovement1 = GetComponent<EnemyMovement1>();
     }
 
     public void TakeDamage(int damage, Player_Bullet.BulletType bulletType)

@@ -739,6 +739,7 @@ MonoBehaviour:
   allowedAttackTypes: 000000000200000003000000
   maxHealth: 5
   healthBar: {fileID: 1622362547728463643}
+  enemyMovement1: {fileID: 0}
 --- !u!114 &3825631489894243131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -757,6 +758,7 @@ MonoBehaviour:
   minDistance: 1.5
   maxDistance: 10
   fireRate: 2
+  isMoving: 1
 --- !u!1 &8735245270312148821
 GameObject:
   m_ObjectHideFlags: 0
